@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Playfair+Display:ital@1&family=WindSong&display=swap');
+$color-main: #B3331D;
+$color-dark: #333333;
+$color-light: rgb(250, 250, 250);
+
+
+$gold-1: #ae8625;
+$gold-2: #f7ef8a;
+$gold-3: #d2ac47;
+$gold-4: #edc967;
+
+$shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+
+/*fonts*/
+
+$default-font: 'Inter', sans-serif;
+$handwriting-font: 'WindSong', cursive;
+
+$font-light: 300;
+$font-normal: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+$base-size: 19px;
+$header-size-xl: 2.5rem;
+$header-size-lg: 2.1rem;
+$header-size-md: 2.0rem;
+$header-size-sm: 1.3em;
+
+/* Animation */
+$transition: all .3s ease-in-out;
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*Another*/
+$radius: 4px;
+
+/*respons*/
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+

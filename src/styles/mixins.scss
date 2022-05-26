@@ -1,0 +1,57 @@
+
+@import '../styles/settings.scss';
+
+
+@mixin flex($flex-direction, $align-items, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl}) {
+        @content;
+    }
+ }
+
+ // Super extra large devices
+ @mixin xxl {
+    @media (min-width: #{$screen-xxl}) {
+        @content;
+    }
+ }
+
+ @mixin button( $btn-bg, $btn-text,$btn-border, $width) {
+    background-color: $btn-bg;
+    color: $btn-text;
+    border: 1px solid $btn-border;
+    width: $width;
+
+    &:hover {
+        background: $btn-text;
+        color: $btn-bg;
+      }
+ }

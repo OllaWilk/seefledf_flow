@@ -1,0 +1,57 @@
+@import "./settings.scss";
+@import "./mixins.scss";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $color-light;
+    font-family: $default-font;
+    font-size: $base-size;
+    line-height: 1.7;
+    font-weight: $font-normal;
+    color: $color-dark;
+    align-content: center;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 7vw;
+    width: 100%;
+
+    // 576px window width and more
+    @include sm {
+        width: 80%;
+        padding: 0 0;
+    }
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.gradient {
+	background: linear-gradient(-45deg, $gold-1, $gold-2, $gold-3, $gold-4);
+	background-size: 500% 500%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+    width: 100%;
+}
