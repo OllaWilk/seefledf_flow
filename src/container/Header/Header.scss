@@ -1,0 +1,76 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
+
+
+.app__header {
+    position: relative;
+    @include flex(column, center, center);
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 40px;
+    z-index: 2;
+    align-items: center;
+    
+    .app__header-wrap {
+        position: relative;
+        @include flex(column, stretch, flex-end);
+        height: 100%;
+        z-index: 10;
+
+        h1, span, a {
+            margin: 1rem 0;
+        }
+
+        h1 {
+            font-size: $header-size-sm;
+            font-weight: $font-semibold;
+            text-transform: uppercase;
+
+            @include sm {
+                font-size: $header-size-md;
+            }
+            @include lg {
+                font-size: $header-size-lg;
+            }
+
+            @include xxl{
+                font-size: $header-size-xl;
+            }
+        }
+
+        span {
+            font-family: $handwriting-font;
+            font-weight: $font-light;
+            display: inline-block;
+            margin: 25px 0;
+            width: 100%;
+            color: $color-main;
+
+            @include xl {
+                font-size: $header-size-md;
+            }
+        }
+
+
+        @include sm {
+            width: 80%;
+            padding-top: 0;
+            @include flex(column, flex-end, flex-end);
+          }
+        }
+
+    @include sm {
+        margin: 0 auto;
+        width: 80%;
+        min-height: 474px;
+        top: 3rem;
+        @include flex(column, center, center);
+    }
+
+    @include xl {
+        margin: 0 auto;
+        padding: 0px;
+        min-height: 80vh;
+        top: 3rem;       
+    }
+}

@@ -2,10 +2,10 @@ import React from 'react';
 
 import './Button.scss';
 
-const Button = () => {
+const Button = ({props}) => {
 
   return (
-    <> btn</>
+    <a className='btn' href="http://localhost:3001/seefledf_flow" >{ props }</a>
   )
 }
 
