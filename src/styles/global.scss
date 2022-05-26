@@ -11,12 +11,15 @@
 body {
     background: $color-light;
     font-family: $default-font;
-    font-size: $base-size;
+    font-size: $base-size-sm;
     line-height: 1.7;
     font-weight: $font-normal;
     color: $color-dark;
     align-content: center;
     
+    @include md {
+        font-size: $base-size;
+    }
 }
 
 .container {
