@@ -10,7 +10,13 @@
 }
 
 // Small devices
-@mixin sm {
+@mixin sm-max {
+    @media (max-width: #{$screen-sm}) {
+        @content;
+    }
+ }
+ 
+ @mixin sm {
     @media (min-width: #{$screen-sm}) {
         @content;
     }

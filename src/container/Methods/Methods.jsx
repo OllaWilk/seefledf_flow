@@ -55,7 +55,7 @@ const Methods = () => {
                 <ButtonWhite  props={"Czytaj więcej"} />
               </div>
               <div className="app_method-img-wrapper">
-                <img src={method.imgUrl} alt="" />
+                <img src={method.imgUrl} alt={method.title} />
               </div>
             </div>
           ))}
