@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../../components';
+import { ButtonBlack } from '../../components';
 import "./Header.scss";
 
 
@@ -16,7 +16,7 @@ const Header = () => {
           i swojego ciała. 
         </h1>
         <span>Joga, masaż, ciało, umysł.</span>
-        <Button props={"skontaktuj się"}/>
+        <ButtonBlack props={"skontaktuj się"}/>
       </div> 
     </header>
   )

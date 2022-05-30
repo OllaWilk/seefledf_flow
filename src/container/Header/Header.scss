@@ -16,7 +16,7 @@
         @include flex(column, stretch, flex-end);
         height: 100%;
         z-index: 10;
-
+        
         h1, span, a {
             margin: 1rem 0;
         }
@@ -25,6 +25,7 @@
             font-size: $header-size-sm;
             font-weight: $font-semibold;
             text-transform: uppercase;
+            width: 100%;
 
             @include sm {
                 font-size: $header-size-md;
@@ -48,6 +49,7 @@
 
             @include xl {
                 font-size: $header-size-md;
+             
             }
         }
 

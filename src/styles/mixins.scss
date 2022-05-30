@@ -18,7 +18,7 @@
  
  // Medium devices
  @mixin md {
-    @media (min-width: #{$screen-md}) {
+    @media (max-width: #{$screen-md}) {
         @content;
     }
  }
@@ -54,4 +54,9 @@
         background: $btn-text;
         color: $btn-bg;
       }
+ }
+
+ @mixin underline($color) {
+     border-bottom: 1px solid $color;
+     
  }

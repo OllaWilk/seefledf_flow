@@ -1,0 +1,20 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
+
+.app__photoCart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  margin-top: 5rem;
+
+  @include md {
+    flex-direction: column-reverse;
+  }
+ 
+
+}
+
+.app__content {
+  display: none;
+}

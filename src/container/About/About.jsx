@@ -1,9 +1,12 @@
 import React from 'react';
+import { Headlines } from '../../components';
 import './About'
 
 const About = () => {
   return (
-    <h1>About</h1>
+    <section className='container'>
+      <Headlines props={"O mnie"} />
+    </section>
   )
 }
 

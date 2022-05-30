@@ -15,7 +15,7 @@ nav {
         padding: 1.5rem 0px;
         transform: translateX(-50%);
         @include flex(row, center, space-between);
-        transition: 0.7s ease-out;
+        transition: $transition;
         z-index: 900;   
 
         .app__navbar-logo {
@@ -23,6 +23,15 @@ nav {
             cursor: pointer;
             font-size: $base-size-sm;
             display: flex;
+
+            @include md {
+                font-size: $base-size-sm;
+               
+            }
+            @include xl {
+                font-size: $base-size;
+               
+            }
         }
 
         svg {

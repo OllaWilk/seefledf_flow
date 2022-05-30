@@ -1,10 +1,12 @@
 import React from 'react';
-
+import { Headlines } from '../../components';
 import './Opinions';
 
 const Opinions = () => {
   return (
-    <div>Opinions</div>
+    <section>
+      <Headlines props={"Opinie"} />
+    </section>
   )
 }
 

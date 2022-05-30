@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Playfair+Display:ital@1&family=WindSong&display=swap');
 $color-main: #B3331D;
 $color-dark: #333333;
+$color-neutral: #5f5f5f5f;
 $color-light: rgb(250, 250, 250);
 
 
@@ -22,13 +23,15 @@ $font-normal: 400;
 $font-semibold: 500;
 $font-bold: 700;
 
-$base-size: 19px;
-$base-size-sm: 15px;
+$base-size: 1rem;
+$base-size-sm: 1rem;
 
 $header-size-xl: 2.5rem;
 $header-size-lg: 2.1rem;
 $header-size-md: 2.0rem;
 $header-size-sm: 1.3em;
+
+$headline-size: 1.6rem;
 
 /* Animation */
 $transition: all .3s ease-in-out;
@@ -48,6 +51,7 @@ $transition: all .3s ease-in-out;
 
 /*Another*/
 $radius: 4px;
+$setion-margin-left: 26%;
 
 /*respons*/
 

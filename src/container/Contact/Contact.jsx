@@ -1,10 +1,12 @@
 import React from 'react';
-
+import { Headlines } from '../../components';
 import './Contact';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section>
+      <Headlines props={"Kontakt"} />
+    </section>
   )
 }
 

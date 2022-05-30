@@ -2,10 +2,12 @@ import React from 'react';
 
 import './Headlines.scss';
 
-const Headlines = () => {
+const Headlines = ({props}) => {
 
   return (
-    <h2 >p</h2>
+    <div >
+      <h2 className='app__headlines'>{props}</h2>
+    </div>
   )
 }
 

@@ -1,14 +1,13 @@
 import React from 'react';
 import { Headlines } from '../../components';
+import './Articles';
 
-import './Price.scss';
-
-const Price = () => {
+const Articles = () => {
   return (
     <section>
-      <Headlines props={"Cennik"} />
+      <Headlines props={"Artykuły"} />
     </section>
   )
 }
 
-export default Price
+export default Articles;

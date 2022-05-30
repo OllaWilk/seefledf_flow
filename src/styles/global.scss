@@ -17,22 +17,33 @@ body {
     color: $color-dark;
     align-content: center;
     
-    @include md {
+    // @include md {
+    //     font-size: $base-size-sm;
+    // }
+
+    @include xl {
         font-size: $base-size;
     }
 }
 
 .container {
     margin: 0 auto;
-    padding: 0 7vw;
-    width: 100%;
+    // padding: 0 7vw;
+    padding: 0 ;
+    width: 95%;
 
     // 576px window width and more
     @include sm {
-        width: 80%;
+        width: 76.5%;
         padding: 0 0;
+
     }
 }
+
+.main-margin {
+    margin-left: 33.33%;
+}
+
 
 a, a:hover {
     text-decoration: none;
