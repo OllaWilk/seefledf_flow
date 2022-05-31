@@ -1,9 +1,15 @@
 @import '../../styles/mixins.scss';
 
 .app__about {
-    padding: 25px 0;
+    padding: 30px 0 0 0;
     @include flex(column, flex-end, center);
     text-align: start;
+    margin-bottom: 150px;
+
+    @include md {
+        margin-bottom: 0;
+        padding: 30px 0 6rem 0;
+    }
 
     .p-about-text {
         width: 67%;
