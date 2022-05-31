@@ -1,95 +1,93 @@
 @import '../../styles/mixins.scss';
 
-.app__methods {
-    @include flex(column, flex-end, center);
 
-    .p-method-text {
-        right: 0;
-        color: $color-neutral;
-        font-size: $base-size;
-        font-weight: $font-normal;
-        width: 67%;
-        padding: 30px 0 0 0;
-        margin-bottom: 150px;
+.p-method-text {
+    right: 0;
+    color: $color-neutral;
+    font-size: $base-size;
+    font-weight: $font-normal;
+    width: 67%;
+    margin-bottom: 150px;
+
+    @include md {
+        width: 100%;
+        height: auto;
+        padding: 30px 0 6rem 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+.app__method-wrapper {
+    width: 100%;
+
+    .app_method-item {
+        border-top: 1px solid $color-dark;
+        padding: 50px 0 ;
+        display: flex;
 
         @include md {
-            width: 100%;
-            height: auto;
-            padding: 30px 0 6rem 0;
-            margin-bottom: 0;
+            @include flex (column, center, space-between)
         }
-        
-    }
 
-    .app__method-wrapper {
-        width: 100%;
+        @include sm-max {
+            padding: 10px 0 0 0;
+        }
 
-        .app_method-item {
-            border-top: 1px solid $color-dark;
-            padding: 30px 0 ;
-            display: flex;
+        .article-headline {
+            font-size: $base-size;
+            font-weight: $font-normal;
+            color: $color-neutral;
+            width: 33%;
 
             @include md {
-                @include flex (column, center, space-between)
+                width: 100%;
+                margin: 0 0 25px;
             }
+        }
 
-            .article-headline {
-                font-size: $base-size;
-                font-weight: $font-normal;
-                color: $color-neutral;
-                width: 33%;
+        .app_content-wrap {
+            width: 33%;
+            height: 330px;
+            @include flex(column, flex-start, space-between);
+            padding-right: 1rem;
 
-                @include md {
-                    width: 100%;
-                    margin: 0 0 25px;
+            @include md {
+                width: 100%;
+                height: auto;
+                padding: 25px 0 0 0 ;
+                
+                &:nth-child(2) {
+                    order: 2;
                 }
             }
 
-            .app_content-wrap {
-                width: 33%;
-                height: 330px;
-                @include flex(column, flex-start, space-between);
+            p {
+                overflow-wrap: anywhere;
+                overflow: hidden;
                 padding-right: 1rem;
-
-                @include md {
-                    width: 100%;
-                    height: auto;
-                    padding: 25px 0 0 0 ;
-                    
-                    &:nth-child(2) {
-                        order: 2;
-                    }
-                }
-
-                p {
-                    overflow-wrap: anywhere;
-                    overflow: hidden;
-                    padding-right: 1rem;
-                }
-
-                a {
-                    margin: 25px 0;
-                }
             }
 
-            .app_method-img-wrapper {
-                width: 33%;
-                height: 330px;
-                border-radius: $radius;
+            a {
+                margin: 25px 0;
+            }
+        }
 
-                img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+        .app_method-img-wrapper {
+            width: 33%;
+            height: 330px;
+           
+            img {
+                @include img;
+            }
 
-                @include md {
-                    width: 100%;
-                }
+            @include md {
+                width: 100%;
             }
         }
     }
 }
+
 
 
 

@@ -66,3 +66,10 @@
      border-bottom: 1px solid $color;
      
  }
+
+ @mixin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $radius;
+ }

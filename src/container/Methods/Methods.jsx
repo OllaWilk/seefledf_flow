@@ -42,7 +42,7 @@ const Methods = () => {
   return (
     <section className=' container' >
       <Headlines props={"Metody"} /> 
-      <div className="app__methods">
+      <div className="section-wrapper">
         <p className='p-method-text'>{aboutMethods}</p>
         <div className="app__method-wrapper">
           

@@ -32,7 +32,7 @@ const Teachers = () => {
   return (
       <section className=' container' >
         <Headlines props={"Nauczyciele"} /> 
-        <div className="app__teachers">
+        <div className=" section-wrapper">
           <div className="app__teacher-list">
             <div className="app__teacher-item">
               {

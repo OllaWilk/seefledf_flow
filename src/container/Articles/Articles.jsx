@@ -1,12 +1,16 @@
 import React from 'react';
 import { Headlines } from '../../components';
-import './Articles';
+import './Articles.scss';
 
 const Articles = () => {
   return (
-    <section>
-      <Headlines props={"Artykuły"} />
-    </section>
+    <section className=' container' >
+      <Headlines props={"Artykuły"} /> 
+      <div className=" section-wrapper">
+     
+     
+    </div>
+  </section>
   )
 }
 

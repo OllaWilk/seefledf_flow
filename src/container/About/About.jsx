@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section className='container'>
       <Headlines props={"O mnie"} />
-      <div className="app__about">
+      <div className="app__about section-wrapper">
         <p className='p-about-text'>{about.title}</p>
         <div className="app__about-wrapper">
           <div className="app_about-img-wrap">

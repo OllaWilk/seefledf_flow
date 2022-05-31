@@ -40,6 +40,17 @@ body {
     }
 }
 
+.section-wrapper {
+    padding: 50px 0 150px 0;
+    @include flex(column, flex-end, center);
+
+    @include sm-max {
+        padding: 10px 0 0px 0;
+        margin-bottom: 30px;
+    }
+
+}
+
 .main-margin {
     margin-left: 33.33%;
 }

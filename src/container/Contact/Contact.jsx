@@ -1,12 +1,16 @@
 import React from 'react';
 import { Headlines } from '../../components';
-import './Contact';
+import './Contact.scss';
 
 const Contact = () => {
   return (
-    <section>
-      <Headlines props={"Kontakt"} />
-    </section>
+    <section className=' container' >
+        <Headlines props={"Kontakt"} /> 
+        <div className=" section-wrapper">
+         
+         
+        </div>
+      </section>
   )
 }
 

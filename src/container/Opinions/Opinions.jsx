@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState }from 'react';
 import { Headlines } from '../../components';
-import './Opinions';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+
+import './Opinions.scss';
 
 const Opinions = () => {
   return (
-    <section>
-      <Headlines props={"Opinie"} />
-    </section>
+    <section className=' container' >
+        <Headlines props={"Opinie"} /> 
+        <div className=" section-wrapper">
+         
+         
+        </div>
+      </section>
   )
 }
 
