@@ -48,7 +48,7 @@
 
         .app_content-wrap {
             width: 33%;
-            height: 330px;
+            // height: 330px;
             @include flex(column, flex-start, space-between);
             padding-right: 1rem;
 
@@ -75,10 +75,13 @@
 
         .app_method-img-wrapper {
             width: 33%;
-            height: 330px;
-           
+            height: 33%;
+        //    border: 2px solid $color-main;
+           border-radius: 5px;
+
             img {
                 @include img;
+                border-radius: 5px;
             }
 
             @include md {

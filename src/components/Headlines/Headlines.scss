@@ -4,7 +4,7 @@
 
 .app__headlines {
     font-weight: $font-normal;
-    font-size: $base-size-sm;
+    font-size: 1.5rem;
     @include underline($color-dark);
     padding: 0 0 .2rem 0;
 

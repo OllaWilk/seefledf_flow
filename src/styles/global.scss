@@ -11,7 +11,7 @@
 body {
     background: $color-light;
     font-family: $default-font;
-    font-size: $base-size-sm;
+    font-size: $base-size;
     line-height: 1.7;
     font-weight: $font-normal;
     color: $color-dark;
@@ -41,7 +41,7 @@ body {
 }
 
 .section-wrapper {
-    padding: 50px 0 150px 0;
+    padding: 50px 0 50px 0;
     @include flex(column, flex-end, center);
 
     @include sm-max {

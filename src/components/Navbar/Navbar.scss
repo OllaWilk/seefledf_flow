@@ -37,11 +37,13 @@ nav {
         svg {
             display: flex;
             cursor: pointer;
+            width: 1.5rem;
+            height: 1.5rem;
 
-            @include xl {
-                width: $base-size;
-                height: $base-size;
-            }
+            // @include xl {
+            //     width: $base-size;
+            //     height: $base-size;
+            // }
         }
     }
 }
