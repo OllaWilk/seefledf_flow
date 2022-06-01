@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/seefledf_flow/static/css/main.76844dc2.css",
+    "main.js": "/seefledf_flow/static/js/main.7bb7c06f.js",
+    "static/media/jivakaSmall.jpg": "/seefledf_flow/static/media/jivakaSmall.f9d4c6c8f240f3955c71.jpg",
+    "static/media/tybet.jpg": "/seefledf_flow/static/media/tybet.ba5aed3495852c91fba1.jpg",
+    "static/media/ANNA-about.jpg": "/seefledf_flow/static/media/ANNA-about.bf58743f6f21153e0dfe.jpg",
+    "static/media/joga.jpg": "/seefledf_flow/static/media/joga.86d35142c2aa3ae6765d.jpg",
+    "static/media/relaks.jpg": "/seefledf_flow/static/media/relaks.f3dd8ab84da92f92ddb5.jpg",
+    "index.html": "/seefledf_flow/index.html",
+    "main.76844dc2.css.map": "/seefledf_flow/static/css/main.76844dc2.css.map",
+    "main.7bb7c06f.js.map": "/seefledf_flow/static/js/main.7bb7c06f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76844dc2.css",
+    "static/js/main.7bb7c06f.js"
+  ]
+}
