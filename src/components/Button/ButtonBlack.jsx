@@ -5,7 +5,7 @@ import './ButtonBlack.scss';
 const ButtonBlack = ({props}) => {
 
   return (
-    <a className='btn' href={props}  >{ props }</a>
+    <div className='btn'  >{ props }</div>
   )
 }
 

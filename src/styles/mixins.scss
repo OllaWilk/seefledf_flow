@@ -23,6 +23,11 @@
  }
  
  // Medium devices
+ @mixin md-max {
+    @media (min-width: #{$screen-md}) {
+        @content;
+    }
+ }
  @mixin md {
     @media (max-width: #{$screen-md}) {
         @content;

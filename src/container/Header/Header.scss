@@ -16,7 +16,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 75%;
+        width: 100%;
 
         @include sm-max {
             @include flex (column, center, space-between);
@@ -55,7 +55,7 @@
             }
         }
 
-        a {
+        div {
             position: absolute;
             margin: 30px 0;
             right: 0;

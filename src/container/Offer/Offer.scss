@@ -1,2 +1,79 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
 
+.app__offers-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ 
+
+    .app_offer-item {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        margin: 20px 0;
+
+        &:hover  p { 
+            display: block;
+            transform: translateX(0%);
+            z-index: 3;
+
+        }
+
+        @include sm-max {
+            width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: 333px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .title {
+            
+            font-size: $base-size;
+            margin: 20px 0;
+
+        }
+        
+
+        .abstract {
+            top: 0px;
+            background-color: $color-light;
+            position: absolute;
+            padding: 1rem;
+            transition: $transition;
+            transform: translateY(-100%);
+           
+        }
+
+        .btnwhite {
+           width: 33%;
+           
+           @include md {
+               width: 40%;
+           }
+          }
+        
+    }
+}
+
+.open {
+    background-color: rgba($color: $color-dark, $alpha: .8);
+    opacity: .5;
+    display: block;
+
+}
+
+.close {
+    background-color: yellow;
+    display: none;
+ 
+}

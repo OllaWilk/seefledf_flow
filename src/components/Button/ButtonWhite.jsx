@@ -5,7 +5,7 @@ import './ButtonWhite.scss';
 const ButtonWhite = ({props}) => {
 
   return (
-    <a className='btnwhite' href={props}  >{ props }</a>
+    <div className='btnwhite'>{ props }</div>
   )
 }
 

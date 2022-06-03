@@ -31,13 +31,12 @@ body {
 }
 
 .section-spaceing {
-    background-color: pink;
-    width: 80%;
+    // background-color: pink;
+    width: 70%;
     min-height: 70vh;
-    margin: 20px 0 90px 20% ;
+    margin: 20px 0 90px 30% ;
 
     @include md {
-        background-color: red;
         width: 100%;
         margin: 20px 0 90px 0;
 
