@@ -4,13 +4,14 @@ import './Contact.scss';
 
 const Contact = () => {
   return (
-    <section className=' container' >
-        <Headlines props={"Kontakt"} /> 
-        <div className=" section-wrapper">
-         
-         
-        </div>
-      </section>
+    <section>
+      <Headlines props={"Kontakt"} />
+      <div className="section-spaceing ">
+        
+       
+        
+      </div>
+    </section>
   )
 }
 

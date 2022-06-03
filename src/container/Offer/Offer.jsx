@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Headlines, ButtonWhite } from '../../components';
 
 import { images } from '../../constants';
 
-import './Methods.scss';
+import './Offer.scss';
 
-const Methods = () => {
+const Offer = () => {
 
   const aboutMethods = "Krótko o metodach.  Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ea quisquam doloremque officia voluptatum facere. Dolore perspiciatis cum quia commodi incidunt placeat aut repellendus pariatur rerum. Quae, cum tenetur. Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ea quisquam doloremque officia voluptatum facere. Dolore perspiciatis cum quia commodi incidunt placeat aut repellendus pariatur rerum. Quae, cum tenetur."
 
@@ -36,33 +36,29 @@ const Methods = () => {
     }
   ]
   
-  
+  const [toggle, setToggle] = useState(false);
+
+  const toggleText = (event) => {
+    event.preventDefault(); 
+    setToggle(!toggle);
+  }
 
   return (
-    <section className=' container' >
-      <Headlines props={"Metody"} /> 
-      <div className="section-wrapper">
-        <p className='p-method-text'>{aboutMethods}</p>
-        <div className="app__method-wrapper">
-          
-          { methods.map((method, index) => (
-
-            <div className="app_method-item" key={method.title + index} >
-              <h3 className='article-headline'>{method.title}</h3>
-              <div className="app_content-wrap ">
-                <p className="abstract ">{method.abstract}</p>
-                <ButtonWhite  props={"Czytaj więcej"} />
-              </div>
-              <div className="app_method-img-wrapper">
-                <img src={method.imgUrl} alt={method.title} />
-              </div>
-            </div>
-          ))}
-
+    <section >
+      <Headlines props={"Oferta"} /> 
+      <div className="section-spaceing ">
+        <div className="app__offer-content">
+          <div className="ima-wraper">
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p></p>
+          </div>
         </div>
       </div>
+
     </section>
   )
 }
 
-export default Methods
+export default Offer

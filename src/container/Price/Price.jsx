@@ -5,12 +5,18 @@ import './Price.scss';
 
 const Price = () => {
   return (
-    <section className=' container' >
-    <Headlines props={"Cennik"} /> 
-    <div className=" section-wrapper">
-     
-     
-    </div>
+    <section >
+      <Headlines props={"Cennik"} /> 
+        <div className="section-spaceing ">
+          <div className="app__offer-content">
+            <div className="ima-wraper">
+              <img src="" alt="" />
+            </div>
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
   </section>
   )
 }

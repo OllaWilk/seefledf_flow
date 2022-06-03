@@ -12,49 +12,37 @@ body {
     background: $color-light;
     font-family: $default-font;
     font-size: $base-size;
-    line-height: 1.7;
+    line-height: $line-height;
     font-weight: $font-normal;
     color: $color-dark;
-    align-content: center;
-    
-    // @include md {
-    //     font-size: $base-size-sm;
-    // }
-
-    @include xl {
-        font-size: $base-size;
-    }
+    text-align: left;
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
-    // padding: 0 7vw;
-    padding: 0 ;
-    width: 95%;
+    max-width: 1110px;
+    padding: 0 30px;
 
-    // 576px window width and more
-    @include sm {
-        width: 76.5%;
-        padding: 0 0;
-
-    }
-}
-
-.section-wrapper {
-    padding: 50px 0 50px 0;
-    @include flex(column, flex-end, center);
 
     @include sm-max {
-        padding: 10px 0 0px 0;
-        margin-bottom: 30px;
+        padding: 0 16px;
+    } 
+}
+
+.section-spaceing {
+    background-color: pink;
+    width: 80%;
+    min-height: 70vh;
+    margin: 20px 0 90px 20% ;
+
+    @include md {
+        background-color: red;
+        width: 100%;
+        margin: 20px 0 90px 0;
+
     }
-
 }
-
-.main-margin {
-    margin-left: 33.33%;
-}
-
 
 a, a:hover {
     text-decoration: none;

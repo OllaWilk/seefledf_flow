@@ -3,17 +3,22 @@
 
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 996;
   background: $color-light;
+  height: 64px;
+  padding: 18px 10% 0 10%;
+  margin: 0 auto;
+//   border-bottom: 1px solid $color-neutral;
+  padding-top: 18px;
+
+  @include sm-max {
+    padding: 18px 10px 0 10px;
+}
 
     .navbar-menu {
         position: relative;
-        top: 0;
-        left: 50%;
-        width: 80%;
-        padding: 1.5rem 0px;
-        transform: translateX(-50%);
         @include flex(row, center, space-between);
         transition: $transition;
         z-index: 900;   
@@ -21,17 +26,8 @@ nav {
         .app__navbar-logo {
             text-transform: uppercase;
             cursor: pointer;
-            font-size: $base-size-sm;
+            font-size: $base-size;
             display: flex;
-
-            @include md {
-                font-size: $base-size-sm;
-               
-            }
-            @include xl {
-                font-size: $base-size;
-               
-            }
         }
 
         svg {
@@ -39,11 +35,6 @@ nav {
             cursor: pointer;
             width: 1.5rem;
             height: 1.5rem;
-
-            // @include xl {
-            //     width: $base-size;
-            //     height: $base-size;
-            // }
         }
     }
 }

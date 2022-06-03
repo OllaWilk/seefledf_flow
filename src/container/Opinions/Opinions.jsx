@@ -14,14 +14,19 @@ const Opinions = () => {
 
   return (
 
-
-    <section className=' container' >
-        <Headlines props={"Opinie"} /> 
-        <div className=" section-wrapper">
-         
-         
+    <section >
+      <Headlines props={"Opinie"} /> 
+        <div className="section-spaceing ">
+          <div className="app__offer-content">
+            <div className="ima-wraper">
+              <img src="" alt="" />
+            </div>
+            <div>
+              <p></p>
+            </div>
+          </div>
         </div>
-      </section>
+    </section>
   )
 }
 
