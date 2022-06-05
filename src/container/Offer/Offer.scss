@@ -1,58 +1,84 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
+div > h2  {
+    z-index: -10;
+}
+
 .app__offers-content {
-    display: flex;
+  
     width: 100%;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include flex(row, flex-start, space-between);
     flex-wrap: wrap;
  
 
     .app_offer-item {
         width: 48%;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
+        @include flex(column, flex-start, center);
         position: relative;
-        overflow: hidden;
         margin: 20px 0;
 
-        &:hover  p { 
+        &:hover  .abstract { 
             display: block;
-            transform: translateX(0%);
             z-index: 3;
-
         }
 
         @include sm-max {
             width: 100%;
         }
-        
-        img {
+
+        .app__img-wrap {
             width: 100%;
             height: 333px;
-            object-fit: cover;
-            border-radius: 3px;
-        }
+            cursor: pointer;
+            position: relative;
 
+            &:hover .abstract{
+                opacity: 1;
+            }
+
+            img {
+                width: 100%;
+                height: 333px;
+                object-fit: cover;
+                border-radius: $radius;
+    
+                &:hover .abstract {
+                    display: block;
+                    transform: translateX(0%);
+                }
+            }
+
+            .abstract {
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                background-color: $color-light;
+                opacity: 0;
+                height: 100%;
+                transition: .3s linear;
+
+                @include sm-max {
+                    display: none;
+                }
+            }
+        }
+    
         .title {
-            
             font-size: $base-size;
             margin: 20px 0;
 
         }
-        
 
-        .abstract {
-            top: 0px;
-            background-color: $color-light;
-            position: absolute;
-            padding: 1rem;
-            transition: $transition;
-            transform: translateY(-100%);
-           
+        .abstract-sm {
+            display: none;
+
+            @include sm-max {
+                display: block;
+                padding: 0 0 1rem 0;
+            }
         }
+        
 
         .btnwhite {
            width: 33%;
@@ -60,20 +86,7 @@
            @include md {
                width: 40%;
            }
-          }
+        }
         
     }
-}
-
-// .open {
-//     background-color: rgba($color: $color-dark, $alpha: .8);
-//     opacity: .5;
-//     display: block;
-
-// }
-
-.close {
-    background-color: yellow;
-    display: none;
- 
 }

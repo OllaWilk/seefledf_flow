@@ -21,9 +21,9 @@
         @include sm-max {
             @include flex (column, center, space-between);
             width: 100%;
-            height: 50%;
+            height: 60%;
             left: 0;
-            top: 50%;
+            top: 53%;
             transform: translateX(0%);
             transform: translateY(-50%);
         }
