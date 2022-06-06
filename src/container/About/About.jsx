@@ -19,10 +19,9 @@ const About = () => {
     <section>
       <Headlines props={"O mnie"} />
       <div className="section-spaceing ">
-        
         <div className="app__about-wrapper">
           <div className="app_about-img-wrap">
-            <img src='{about.img}' alt={about.title} />
+            <img src={about.img} alt={about.title} />
           </div>
           <p className='p-about-text'>{about.title}</p>
           <p className="p-text">{about.content}</p>
