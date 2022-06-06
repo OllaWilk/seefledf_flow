@@ -1,6 +1,8 @@
 import React from 'react';
 import { Headlines } from '../../components';
+
 import { images } from '../../constants';
+
 import './About.scss'
 
 const About = () => {
