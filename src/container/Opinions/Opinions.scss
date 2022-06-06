@@ -5,7 +5,7 @@
     @include flex( row, center, center);
  
     .app__testimonial-item { 
-        height: 70vh;
+        margin: 20px 0;
         @include flex( row, center, space-between);
       
         @include sm-max {
@@ -25,7 +25,7 @@
                 padding: 0 ;
                 position: absolute;
                 width: auto;
-                top: -60px;
+                top: -79px;
 
                 &:nth-child(1) {
                     right: 20%;
@@ -60,6 +60,11 @@
             .app__testimonial-quote {
                 // position: relative;
                 margin-bottom: 25px;
+                height: 40vh;
+
+                @include sm-max {
+                    height: auto;
+                }
 
                 img {
                     // position: absolute;   
@@ -75,8 +80,8 @@
             }
 
             .app__name {
-                color: $color-neutral;
-                border-top: 1px solid $color-dark;
+                color: $color-main;
+                border-top: 1px solid $color-main;
                 padding-top: 10px;
                 text-align: right;
             }
