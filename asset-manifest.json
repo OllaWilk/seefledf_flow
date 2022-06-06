@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/seefeld_flow/static/css/main.ee6aa4f4.css",
-    "main.js": "/seefeld_flow/static/js/main.3365f519.js",
+    "main.css": "/seefeld_flow/static/css/main.80d649cb.css",
+    "main.js": "/seefeld_flow/static/js/main.ed61893d.js",
     "static/media/joga.jpg": "/seefeld_flow/static/media/joga.c01434b1adf777e214b1.jpg",
     "static/media/relaks.jpg": "/seefeld_flow/static/media/relaks.4d1f44039570d46ceb8b.jpg",
-    "static/media/ANNA-about.jpg": "/seefeld_flow/static/media/ANNA-about.bf58743f6f21153e0dfe.jpg",
+    "static/media/ANNA-about.jpg": "/seefeld_flow/static/media/ANNA-about.18947e51602838601169.jpg",
     "static/media/jivakaSmall.jpg": "/seefeld_flow/static/media/jivakaSmall.a393ff967cb3140bb194.jpg",
     "static/media/tybet.jpg": "/seefeld_flow/static/media/tybet.e48eea79d15bfb1bd37a.jpg",
     "static/media/quote.png": "/seefeld_flow/static/media/quote.d5842368e2f28970cd5f.png",
     "index.html": "/seefeld_flow/index.html",
-    "main.ee6aa4f4.css.map": "/seefeld_flow/static/css/main.ee6aa4f4.css.map",
-    "main.3365f519.js.map": "/seefeld_flow/static/js/main.3365f519.js.map"
+    "main.80d649cb.css.map": "/seefeld_flow/static/css/main.80d649cb.css.map",
+    "main.ed61893d.js.map": "/seefeld_flow/static/js/main.ed61893d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee6aa4f4.css",
-    "static/js/main.3365f519.js"
+    "static/css/main.80d649cb.css",
+    "static/js/main.ed61893d.js"
   ]
 }
