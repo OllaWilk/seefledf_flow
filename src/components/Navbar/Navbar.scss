@@ -8,13 +8,21 @@ nav {
   z-index: 996;
   background: $color-light;
   height: 64px;
-  padding: 18px 10% 0 10%;
   margin: 0 auto;
 //   border-bottom: 1px solid $color-neutral;
   padding-top: 18px;
 
   @include sm-max {
     padding: 18px 17px 0 17px;
+}
+  @include md {
+    padding: 18px 4% 0 4%;
+}
+  @include lg {
+    padding: 18px 5% 0 5%;
+}
+  @include xxl {
+    padding: 18px 12% 0 12%;
 }
 
     .navbar-menu {

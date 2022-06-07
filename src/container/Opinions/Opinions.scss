@@ -3,10 +3,15 @@
 
 .app__opinions-content {
     @include flex( row, center, center);
+    margin: 40px 0 90px 0;
+    height: 50vh;
+
+    @include sm-max {
+        height: auto;
+    }
  
     .app__testimonial-item { 
-        margin: 20px 0;
-        @include flex( row, center, space-between);
+        @include flex( row, center, center);
       
         @include sm-max {
             display: block;
@@ -21,15 +26,11 @@
 
             @include sm-max {
                 display: block;
-                margin: 0 ;
-                padding: 0 ;
+                top: -20px;
                 position: absolute;
-                width: auto;
-                top: -79px;
-
-                &:nth-child(1) {
-                    right: 20%;
-                }
+                      
+                margin-bottom: 20px;
+                text-align: center;
 
                 &:nth-child(3) {
                     width: auto;
@@ -58,16 +59,15 @@
             }
 
             .app__testimonial-quote {
-                // position: relative;
+                position: relative;
                 margin-bottom: 25px;
-                height: 40vh;
 
                 @include sm-max {
                     height: auto;
                 }
 
                 img {
-                    // position: absolute;   
+                    position: absolute;   
                     width: 24px;
                     height: 17px;
 
@@ -77,11 +77,20 @@
                         transform: rotate(180deg);
                     }
                 }
+
+                p {
+                    padding: 0 40px;
+
+                    @include sm-max {
+                        padding: 20px 0 0 0;
+                        text-align: center;
+                    }
+                }
             }
 
             .app__name {
                 // color: $color-main;
-                border-top: 1px solid $color-dark;
+                // border-top: 1px solid $color-dark;
                 padding-top: 10px;
                 text-align: right;
             }

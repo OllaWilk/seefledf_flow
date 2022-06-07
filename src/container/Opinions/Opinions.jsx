@@ -4,7 +4,7 @@ import { Headlines } from '../../components';
 import { images } from '../../constants';
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
-import { RiDoubleQuotesL  } from 'react-icons/ri';
+
 import './Opinions.scss';
 
 const Opinions = () => {
@@ -41,7 +41,7 @@ const Opinions = () => {
 
     <section >
       <Headlines props={"Opinie"} /> 
-        <div className="section-spaceing ">
+        <div className="">
           <div className="app__opinions-content">
             
             { testimonialsArr.length && (

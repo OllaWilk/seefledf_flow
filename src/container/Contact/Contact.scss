@@ -1,49 +1,88 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
-.contact {
-    background-color: $color-light;
-    color: $color-dark;
-    min-height: 800px;
-}
-.form-position {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 60px;
-}
- form {
-    flex: 2 0 0;
-    display: block;
-    padding-right: 96px;
-    .section-title {
-        margin: 0;
-    }
-}
-.contact-description {
-    flex: 0 0 1;
-    font-size: 20px;
-    position: relative;
-    text-align: left;
-}
-input, textarea {
-    display: inline-block;
-    padding: 10px;
+.app__contact {
+
     width: 100%;
-    border: none;
-    border-bottom: 2px solid $color-dark;
-    background: transparent;
-    // color: $color-light;
-    height: 60px;
-    margin: 5px 0;
-    font-size: 15px;
-    outline: none;
-    &::placeholder {
-        // color: $color-light;
-        font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 40px 0 90px 0;
+
+    .app__contact-form {
+       width:70%;
+    //    background-color: red;
+        form {
+           
+            display: flex;
+            flex-direction: column;
+            padding-left: 96px;
+
+            textarea {
+                height: 200px;
+            }
+
+            input, textarea {
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid $color-dark;
+                height: 40px;
+                margin: 5px 0;
+                font-size: $base-size;
+                outline: none;
+                &::placeholder {
+                    font-size: $base-size;
+                }
+            }
+
+            a {
+                margin-top: 40px;
+            }
+        }
     }
+
+    .app__contact-adres  {
+        border-right: 1px solid $color-dark;
+        width: 30%;
+    }
+
 }
 
-textarea {
-    height: 200px;
-}
+// .form-position {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     padding-top: 60px;
+// }
+//  form {
+//     flex: 2 0 0;
+//     display: block;
+//     padding-right: 96px;
+//     .section-title {
+//         margin: 0;
+//     }
+// }
+// .contact-description {
+//     flex: 0 0 1;
+//     font-size: 20px;
+//     position: relative;
+//     text-align: left;
+// }
+// input, textarea {
+//     display: inline-block;
+//     padding: 10px;
+//     width: 100%;
+//     border: none;
+//     border-bottom: 2px solid $color-dark;
+//     background: transparent;
+//     // color: $color-light;
+//     height: 60px;
+//     margin: 5px 0;
+//     font-size: 15px;
+//     outline: none;
+//     &::placeholder {
+//         // color: $color-light;
+//         font-size: 15px;
+//     }
+// }
+
