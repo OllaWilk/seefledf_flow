@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Headlines, ButtonWhite } from "../../components";
+import { Headlines } from "../../components";
 
 import { images } from "../../constants";
 

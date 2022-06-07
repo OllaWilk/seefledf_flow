@@ -2,26 +2,58 @@
 @import '../../styles/settings.scss';
 
 .app__contact {
-
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin: 40px 0 90px 0;
+
+    @include flex (row-reverse, center, space-between);
+    margin: 40px 0 110px 0;
+
+    @include sm-max {
+        flex-direction: column-reverse;
+        margin: 0px 0 110px 0;
+    }
 
     .app__contact-form {
        width:70%;
-    //    background-color: red;
-        form {
+
+       @include sm-max {
+            width: 100%;
+        }
+
+        @include md {
+            width: 60%;
+        }
+
+        
+
+        h3 {
+            display: none;
            
+
+            @include sm-max {
+                display: block;
+                font-size: $base-size;
+                font-weight: $font-bold;
+                padding-bottom: 20px;
+            }
+        }
+
+        form {
             display: flex;
             flex-direction: column;
             padding-left: 96px;
+            border-left: 1px solid $color-dark;
 
-            textarea {
-                height: 200px;
+            @include sm-max {
+                padding-left: 0;
+                border-left: none;
+
             }
 
+            @include md {
+                padding-left: 20px;
+            }
+
+           
             input, textarea {
                 padding: 10px 0;
                 border: none;
@@ -35,54 +67,43 @@
                 }
             }
 
+            textarea {
+                height: 200px;
+            }
+
             a {
                 margin-top: 40px;
             }
         }
     }
 
-    .app__contact-adres  {
-        border-right: 1px solid $color-dark;
+    .app__contact-items  {
+        height:435px;
         width: 30%;
+        @include flex( column, flex-start, space-between);
+
+        @include sm-max {
+            width: 100%;
+            height: auto;
+            margin-bottom: 90px;
+            
+        }
+
+        @include md {
+            width: 40%;
+        }
+
+
+        .app__contact-label-item {
+            width: 100%;
+            
+
+            @include sm-max {
+                padding: 0 10px;
+                // border-top: 1px solid $color-dark;
+                border-bottom: 1px solid $color-dark;
+                padding: 20px 0;
+            }
+        } 
     }
-
 }
-
-// .form-position {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     padding-top: 60px;
-// }
-//  form {
-//     flex: 2 0 0;
-//     display: block;
-//     padding-right: 96px;
-//     .section-title {
-//         margin: 0;
-//     }
-// }
-// .contact-description {
-//     flex: 0 0 1;
-//     font-size: 20px;
-//     position: relative;
-//     text-align: left;
-// }
-// input, textarea {
-//     display: inline-block;
-//     padding: 10px;
-//     width: 100%;
-//     border: none;
-//     border-bottom: 2px solid $color-dark;
-//     background: transparent;
-//     // color: $color-light;
-//     height: 60px;
-//     margin: 5px 0;
-//     font-size: 15px;
-//     outline: none;
-//     &::placeholder {
-//         // color: $color-light;
-//         font-size: 15px;
-//     }
-// }
-

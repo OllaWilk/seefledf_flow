@@ -1,0 +1,40 @@
+@import '../../styles/settings.scss';
+@import '../../styles/mixins.scss';
+
+.contact-wrapper {
+    @include flex( column, flex-start, space-around);
+    width: 100%;
+    height: 100px;
+
+    @include sm-max {
+        justify-content: center;
+    }
+
+    p {
+        font-weight: $font-bold;
+    }
+    
+
+    .wrapper-icon {
+        @include flex( row, center, space-between);
+        width: 100%;
+
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+
+            @include md-max {
+                margin-right: 10px;
+            }
+        }
+
+        h3 {
+            font-size: $base-size;
+            width: 100%;
+            // background-color: green;
+            font-weight: $font-normal;
+        }
+    }
+}
