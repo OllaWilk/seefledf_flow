@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 import { Headlines, ContactLabel } from '../../components';
 
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -27,24 +29,48 @@ const Contact = () => {
     }
   ]
 
+  const form = useRef();
+  const [done, setDone] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        'service_test.soft.wilk',
+        'template_testowy', 
+        form.current, 
+        'emN60zZ4izVezIl4_'
+       )
+      .then((result) => {
+          console.log(result.text);
+          console.log("message send");
+          setDone(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
+
   return (
     <section>
       <Headlines props={"Kontakt"} />
       <div className="app__contact">
         <div className="app__contact-form">
           <h3>Formularz kontaktowy:</h3>
-          <form >
-            <input type="text" name="user_name" placeholder="Imię i nazwisko" minlength="2" maxlength="40" title="Imie" required />
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Imię i nazwisko" minLength={2} maxLength={40} title="Imie" required />
             <input type="email" name="user_email" placeholder="E-mail" title="Email" required />
-            <input type="text" name="user_subject" placeholder="Temat" minlength="2" title="Temat" required />
-            <textarea placeholder="Wiadomość" name="user_message"></textarea>
-            <a href="#" class="btn btn_one">wyśłij</a>
+            <input type="text" name="user_subject" placeholder="Temat" minLength={2} title="Temat" required />
+            <textarea placeholder="Wiadomość" name="message"></textarea>
+            <button className="btn" type="submit" value="Send"  >wyślij</button>
+            { done && "Wiadomość została wysłana"}
           </form>
         </div>
         <div className="app__contact-items">
 
           { contactLabels.map((contactLabel, index) => (
-            <div className="app__contact-label-item">
+            <div className="app__contact-label-item" key={index}>
               <ContactLabel 
                 title = {contactLabel.title}
                 ikon = {contactLabel.ikon }

@@ -73,7 +73,7 @@
                 height: 200px;
             }
 
-            a {
+            button {
                 margin-top: 40px;
             }
         }
@@ -101,8 +101,7 @@
             
 
             @include sm-max {
-                padding: 0 10px;
-                // border-top: 1px solid $color-dark;
+               
                 border-bottom: 1px solid $color-dark;
                 padding: 20px 0;
             }

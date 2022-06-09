@@ -8,7 +8,7 @@ import "./Header.scss";
 const Header = () => {
   
   return (
-    <header class="app__header">
+    <header className="app__header">
       <div className="app__header-spaceing">
         <h1 >
           joga & masaż <br/>
