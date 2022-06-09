@@ -24,8 +24,8 @@ const Contact = () => {
     {
       title: "Przyjedź", 
       ikon: <SiGooglemaps />,
-      text: 'ul. Lwowska 108',
-      zipCode: '53-439 Wrocław',
+      text: 'ul. Pereca 16/13',
+      zipCode: '53-516 Wrocław',
     }
   ]
 

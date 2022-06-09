@@ -13,7 +13,7 @@ const ContactLabel = ({title, ikon, text, zipCode }) => {
       return "mailto:namshejeshe@gmail.com"
     }
     else {
-      return "https://goo.gl/maps/USpkKW7qLLCjt4Lt6"
+      return "https://goo.gl/maps/cGQQR91P8e9ojNz88"
     }
   }
 
