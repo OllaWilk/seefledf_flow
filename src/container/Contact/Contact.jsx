@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section>
+    <section id='kontakt'>
       <Headlines props={"Kontakt"} />
       <div className="app__contact">
         <div className="app__contact-form">

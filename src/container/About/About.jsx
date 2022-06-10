@@ -16,7 +16,7 @@ const About = () => {
   }
   
   return (
-    <section>
+    <section id='o mnie'>
       <Headlines props={"O mnie"} />
       <div className="section-spaceing ">
         <div className="app__about-wrapper">

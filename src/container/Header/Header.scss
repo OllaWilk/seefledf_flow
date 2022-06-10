@@ -5,8 +5,7 @@
 .app__header {
     height: 80vh;
     position: relative;
-    background-image: url();
-
+    
     @include sm-max {
         height: 100vh;
     }

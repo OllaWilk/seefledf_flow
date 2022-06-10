@@ -1,7 +1,5 @@
-import React, { useState, useEffect }from 'react';
+import React, { useState }from 'react';
 import { Headlines } from '../../components';
-
-import { images } from '../../constants';
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
@@ -51,9 +49,9 @@ const Opinions = () => {
 
   return (
 
-    <section >
+    <section id='opinie'>
       <Headlines props={"Opinie"} /> 
-        <div className="">
+        <div className="section-spaceing">
           <div className="app__opinions-content">
             
             { testimonialsArr.length && (

@@ -1,9 +1,10 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
+
 .app__opinions-content {
     @include flex( row, center, center);
-    margin: 40px 0 90px 0;
+    // margin: 40px 0 90px 0;
     height: 50vh;
 
     @include sm-max {

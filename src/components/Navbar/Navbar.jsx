@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
+ import { Link } from 'react-scroll';
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { HiX } from "react-icons/hi";
@@ -20,7 +21,7 @@ const Navbar = () => {
   
     <nav >
       <div className='navbar-menu' >
-        <div className='app__navbar-logo'>Anna Gidzińska</div>
+        <Link to='home' className='app__navbar-logo'>Anna Gidzińska</Link>
         <div onClick={toggleSidebar} >
           {toggle ? <HiX /> : <AiOutlineMenu/> }
         </div>

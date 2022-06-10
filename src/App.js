@@ -6,6 +6,7 @@ import { Navbar } from './components';
 import './styles/global.scss';
 
 const App = () => {
+  
   return (
     <>
       <Navbar />

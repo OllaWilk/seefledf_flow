@@ -19,9 +19,11 @@
       margin: .5rem 0;
       text-transform: uppercase;
       transition: $transition;
+      cursor: pointer;
 
       a {
         transition: $transition;
+
         &:hover {
           color: $color-main;
         }

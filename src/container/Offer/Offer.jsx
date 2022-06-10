@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Headlines } from "../../components";
 
 import { images } from "../../constants";
@@ -38,15 +38,9 @@ const Offer = () => {
     }
   ]
 
-  const [activeCard, setActiveCard] = useState(false);
-
-  const showCard = (event) => {
-    event.preventDefault(); 
-    setActiveCard(!activeCard);
-  }
 
   return (
-    <section >
+    <section id="oferta">
       <Headlines props={"Oferta"} /> 
       <div className="section-spaceing ">
         <div className="app__offers-content">
@@ -62,9 +56,8 @@ const Offer = () => {
 
               <div className="btnwhite" >
                 <p 
-                  onClick= {showCard}
                   id={offer.title}
-                  className={`app_offer-filter-content-item app__flex p-text ${offer[{index}] === offer.content ? 'close' : ''}`}
+                  // className={`app_offer-filter-content-item app__flex p-text ${offer[{index}] === offer.content ? 'close' : ''}`}
                   >Czytaj więcej</p>  
               </div>
             </div>
