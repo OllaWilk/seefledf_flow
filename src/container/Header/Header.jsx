@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
-import { ButtonBlack } from '../../components';
 import "./Header.scss";
 
 
@@ -17,7 +17,7 @@ const Header = () => {
         <h2> Dobrostan, równowaga, wzmocnienie
           naturalnie, holistycznie, transpersonalnie
           tradycyjnie i na miarę naszych czasów.</h2>
-        <ButtonBlack props={"skontaktuj się"}/>
+        <Link to='kontakt' className='btn header-btn'>Skontaktuj się</Link>
       </div> 
     </header>
   )

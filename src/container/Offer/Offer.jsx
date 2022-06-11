@@ -1,5 +1,7 @@
-import React  from "react";
-import { Headlines } from "../../components";
+import React, {useState}  from "react";
+
+import { Headlines, Modal, OfferCart } from "../../components";
+import { HiX } from "react-icons/hi";
 
 import { images } from "../../constants";
 
@@ -20,24 +22,23 @@ const Offer = () => {
       abstract: "Klejnot wśród masaży. Najstarsza na świecie metoda masażu, wywodząca się z Indii i Tybetu od Jivaka Kumar Bhaccha nadwornego lekarza i ucznia Buddy. Najbogatszy masaż, daje najbardziej wszechstronne korzyści...",
       content: "2 content Unikatowy systuddyjskim Qi Gong i wschodnimi sztukami walk. Metoda jest syntezą tradycji Tai Chi, Kung Fu, Qi Gong, indyjskiej Jogi oraz sztuki Kaligrafii.",
       img:  images.jivaka ,
-      id:1
+   
     },
     { 
       title: "TYBETAŃSKA  PRAKTYKA",
       abstract: "Wzmocnienie ciała i umysłu według 5 elementów. Odmładza i zapewnia długie życie w dobrym zdrowiu. Metoda pochodzi od mnichów z Tybetu, którzy w ten sposób dbali o swoją moc...",
       content: "3 content system ćwiczeń wzmacniających inspirowany buddyjskim Qi Gong i wschodnimi sztukami walk. Metoda jest syntezą tradycji Tai Chi, Kung Fu, Qi Gong, indyjskiej Jogi oraz sztuki Kaligrafii.",
       img:  images.tybet,
-      id: 2
+     
     },
     { 
       title: "RELAKSACJA I HIGIENA",
       abstract: "Unikatowy system ćwiczeń wzmacniających inspirowany buddyjskim Qi Gong i wschodnimi sztukami walk. Metoda jest syntezą tradycji Tai Chi, Kung Fu, Qi Gong, indyjskiej Jogi oraz sztuki Kaligrafii...",
       content: "4 content Uni ćwiczeń wzmacniających inspirowany buddyjskim Qi Gong i wschodnimi sztukami walk. Metoda jest syntezą tradycji Tai Chi, Kung Fu, Qi Gong, indyjskiej Jogi oraz sztuki Kaligrafii.",
       img:  images.relaks,
-      id: "o"
+   
     }
   ]
-
 
   return (
     <section id="oferta">
@@ -45,7 +46,30 @@ const Offer = () => {
       <div className="section-spaceing ">
         <div className="app__offers-content">
 
-          { offers.map((offer, index) => (
+          <OfferCart 
+            title={offers[0].title} 
+            abstract={offers[0].abstract} 
+            content={offers[0].content}
+            img={offers[0].img}
+            />
+          <OfferCart 
+           title={offers[1].title} 
+           abstract={offers[1].abstract} 
+           content={offers[1].content}
+           img={offers[1].img}/>
+          <OfferCart 
+           title={offers[2].title} 
+           abstract={offers[2].abstract} 
+           content={offers[2].content}
+           img={offers[2].img}/>
+          <OfferCart 
+           title={offers[3].title} 
+           abstract={offers[3].abstract} 
+           content={offers[3].content}
+           img={offers[3].img}
+           />
+
+          {/* { offers.map((offer, index) => (
             <div className="app_offer-item" key={offer.title + index}>
               <div className="app__img-wrap">
                 <img src={offer.img} alt={offer.title} />
@@ -56,14 +80,14 @@ const Offer = () => {
 
               <div className="btnwhite" >
                 <p 
+                  onClick={toggleModal.bind(this, offer)}
                   id={offer.title}
-                  // className={`app_offer-filter-content-item app__flex p-text ${offer[{index}] === offer.content ? 'close' : ''}`}
                   >Czytaj więcej</p>  
-              </div>
+              </div> 
             </div>
           ))
-            
-          }
+          } */}
+         
         </div>
       </div>
     </section>
