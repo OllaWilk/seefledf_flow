@@ -4,6 +4,5 @@ export { default as Navbar } from './Navbar/Navbar';
 export { default as SideBar } from './SideBar/SideBar';
 export { default as Headlines } from './Headlines/Headlines';
 export { default as ContactLabel } from './ContactLabel/ContactLabel';
-export { default as Modal } from './Modal/Modal';
 export { default as OfferCart } from './OfferCart/OfferCart';
 

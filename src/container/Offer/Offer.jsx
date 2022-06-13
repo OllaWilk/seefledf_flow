@@ -1,7 +1,6 @@
-import React, {useState}  from "react";
+import React from "react";
 
-import { Headlines, Modal, OfferCart } from "../../components";
-import { HiX } from "react-icons/hi";
+import { Headlines, OfferCart } from "../../components";
 
 import { images } from "../../constants";
 
@@ -13,7 +12,7 @@ const Offer = () => {
     { 
       title: "JOGA QI GONG",
       abstract: "Unikatowy system ćwiczeń wzmacniających inspirowany buddyjskim Qi Gong i wschodnimi sztukami walk. Metoda jest syntezą tradycji Tai Chi, Kung Fu, Qi Gong, indyjskiej Jogi oraz sztuki Kaligrafii...",
-      content: "1 content ćwiczeń wzmacniających inspirowany buddyjskim Qi Gong i wschodnimi sztukami walk. Metoda jest syntezą tradycji Tai Chi, Kung Fu, Qi Gong, indyjskiej Jogi oraz sztuki Kaligrafii.",
+      content: "Praktyka JOGI QI GONG uczy, jak oddechem regulować przepływ ENERGII życiowej w ciele. Zalecana jest profilaktycznie oraz w przeróżnych schorzeniach układu krążenia i odpornościowego, gdyż zdecydowanie zwiększa witalność i przedłuża życie w sprawności fizycznej i psychicznej na długie lata. Poprzez odpowiedni trening ciała, dyscyplinę duchową i przestrzeganie zasad etycznych JOGA QI GONG umożliwia rozpoznanie przez praktykującego natury rzeczywistości. W wyniku tej praktyki uzyskuje się absolutną wolność, stan bezwarunkowego istnienia. Synchronizacja oddechu oraz ruchu ciała w sposób płynny i łagodny, ciągły i niewymuszony polega na głębokiej współpracy zarówno krążenia w ciele fizycznym, jak i uzyskaniu tzw. harmonii ducha czy też głębokiej acz przyjemnej pracy z dyscypliną umysłu. JOGA QI GONG ściśle powiązana jest z akupunkturą jako naturalna tradycyjna metoda lecznicza. Pracuje z punktami biologicznie aktywnymi oraz meridianami (podobnie jak TAJSKI MASAŻ JIVAKA). Wzbogacona o więcej technik wyzwala siłę i stanowi fundament dalekowschodnich sztuk walk. Do rozpoczęcia nauki potrzebna jest mata do jogi oraz wygodne miękkie sportowe ubranie. Zapraszamy.",
       img:  images.joga,
 
     },
@@ -68,26 +67,6 @@ const Offer = () => {
            content={offers[3].content}
            img={offers[3].img}
            />
-
-          {/* { offers.map((offer, index) => (
-            <div className="app_offer-item" key={offer.title + index}>
-              <div className="app__img-wrap">
-                <img src={offer.img} alt={offer.title} />
-                <p className="abstract" >{offer.abstract}</p>
-              </div>
-              <h3 className="title" >{offer.title}</h3>
-              <p className="abstract-sm"  >{offer.abstract}</p>
-
-              <div className="btnwhite" >
-                <p 
-                  onClick={toggleModal.bind(this, offer)}
-                  id={offer.title}
-                  >Czytaj więcej</p>  
-              </div> 
-            </div>
-          ))
-          } */}
-         
         </div>
       </div>
     </section>

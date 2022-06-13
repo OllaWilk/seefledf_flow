@@ -11,6 +11,12 @@ import './OfferCart.scss'
         setModal(!modal)
     }
 
+    if(modal) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
+
   return (
     <>
         <div className="app_offer-item" >
@@ -18,7 +24,10 @@ import './OfferCart.scss'
                 <img src={img} alt={title} />
                 <p className="abstract">{abstract}</p>
             </div>
+            <div className="img-wrap">
             <h3 className="title" > {title}</h3>
+            </div>
+            
             <p className="abstract-sm">{abstract}</p>
             <div className="btnwhite" onClick={toggleModal} >
                 <p>Czytaj więcej</p>

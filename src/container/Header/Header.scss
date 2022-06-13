@@ -32,7 +32,10 @@
             font-size: $header-size;
             font-weight: $font-normal;
             margin-bottom: 30px;
-            
+
+            span {
+                text-transform: none;
+            }
 
             @include sm-max {
                 font-size: $header-size-sm;

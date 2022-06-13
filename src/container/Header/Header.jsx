@@ -12,7 +12,7 @@ const Header = () => {
       <div className="app__header-spaceing">
         <h1 >
           joga & masaż <br/>
-           ciało & umysł
+          <span>ciało & umysł</span> 
         </h1>
         <h2> Dobrostan, równowaga, wzmocnienie
           naturalnie, holistycznie, transpersonalnie
