@@ -42,6 +42,7 @@
             flex-direction: column;
             padding-left: 96px;
             border-left: 1px solid $color-dark;
+           
 
             @include sm-max {
                 padding-left: 0;
@@ -64,6 +65,7 @@
                 margin: 5px 0;
                 font-size: $base-size;
                 outline: none;
+                background-color: $color-light;
                 &::placeholder {
                     font-size: $base-size;
                 }

@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Playfair+Display:ital@1&family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
 $color-main: #4e2133;
+// $color-main: #ae8625;
 $color-dark: #333333;
 $color-neutral: #5f5f5f5f;
-$color-light: rgb(255, 255, 255);
+// $color-light: #ece9e8;
+// $color-light: #eae4db;
+// $color-light: #ebebeb;
+// $color-light: #e9e9e5;
+$color-light: #eaeaea;
 
 $gold-1: #ae8625;
 $gold-2: #f7ef8a;
@@ -16,7 +22,7 @@ $shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 /*fonts*/
 
 $default-font: 'Inter', sans-serif;
-$handwriting-font: 'WindSong', cursive;
+$handwriting-font: 'Playfair Display', serif;
 
 $font-light: 300;
 $font-normal: 400;
@@ -60,4 +66,5 @@ $screen-md: 768px;
 $screen-lg: 992px;
 $screen-xl: 1200px;
 $screen-xxl: 1400px;
+
 

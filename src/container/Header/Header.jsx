@@ -11,13 +11,14 @@ const Header = () => {
     <header id='home' className="app__header" >
       <div className="app__header-spaceing">
         <h1 >
-          joga & masaż <br/>
-          <span>ciało & umysł</span> 
+        <span> joga & masaż </span>  <br/>
+          ciała & umysłu
         </h1>
-        <h2> Dobrostan, równowaga, wzmocnienie
-          naturalnie, holistycznie, transpersonalnie
+        <h2> Dobrostan, równowaga <br/>
+          wzmocnienie naturalnie, <br/>
+          holistycznie, transpersonalnie, <br/>
           tradycyjnie i na miarę naszych czasów.</h2>
-        <Link to='kontakt' className='btn header-btn'>Skontaktuj się</Link>
+        <Link to='kontakt' className='btn header-btn'>Zamów</Link>
       </div> 
     </header>
   )

@@ -28,13 +28,14 @@
         }
              
         h1 {
-            text-transform: uppercase;
-            font-size: $header-size;
+           
             font-weight: $font-normal;
             margin-bottom: 30px;
 
             span {
-                text-transform: none;
+                text-transform: uppercase;
+                font-size: $header-size;
+            
             }
 
             @include sm-max {

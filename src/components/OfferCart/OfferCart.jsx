@@ -25,12 +25,13 @@ import './OfferCart.scss'
                 <p className="abstract">{abstract}</p>
             </div>
             <div className="img-wrap">
-            <h3 className="title" > {title}</h3>
+                
+                <h3 className="title" > {title}</h3>
             </div>
             
             <p className="abstract-sm">{abstract}</p>
             <div className="btnwhite" onClick={toggleModal} >
-                <p>Czytaj więcej</p>
+                <p>Więcej</p>
             </div>
        </div>
        { modal && (

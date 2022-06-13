@@ -1,8 +1,11 @@
- import React, { useState } from 'react';
- import { Link } from 'react-scroll';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+ 
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { HiX } from "react-icons/hi";
+
+import { images } from "../../constants";
 import SideBar from '../SideBar/SideBar';
 
 
@@ -21,7 +24,10 @@ const Navbar = () => {
   
     <nav >
       <div className='navbar-menu' >
-        <Link to='home' className='app__navbar-logo'>Anna Gidzińska</Link>
+        <Link to='home' className='app__navbar-logo'>
+        <img src={images.logo} alt="logo" />
+          Anna Gidzińska
+        </Link>
         <div onClick={toggleSidebar} >
           {toggle ? <HiX /> : <AiOutlineMenu/> }
         </div>
