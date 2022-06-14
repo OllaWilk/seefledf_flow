@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import { HiX } from "react-icons/hi";
+import NamePlusIkon from '../NamePlusIkon/NamePlusIkon';
 
 import './OfferCart.scss'
 
- const OfferCart = ({title, img, abstract, content}) => {
+ const OfferCart = ({title, img, abstract, content, ikon}) => {
 
     const [modal, setModal] = useState(false);
 
@@ -24,8 +25,8 @@ import './OfferCart.scss'
                 <img src={img} alt={title} />
                 <p className="abstract">{abstract}</p>
             </div>
-            <div className="img-wrap">
-                
+            <div className="app__img-title-wrap">
+                <img src={ikon} alt={title} />
                 <h3 className="title" > {title}</h3>
             </div>
             
@@ -38,10 +39,9 @@ import './OfferCart.scss'
             <div className="modal">
             <div className="overlay" onClick={toggleModal} ></div>
             <div className="modal-content">
-                <h2>{title}</h2>
+                <NamePlusIkon name={title} ikon={ikon}/> 
                 <p>{content}</p>
                 <HiX className="close-modal"  onClick={toggleModal} />
-            
             </div>
         </div>
         )}

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Headlines, OfferCart } from '../../components';
+import { Headlines, NamePlusIkon } from '../../components';
 
-
+import { images } from "../../constants";
 import './Price.scss';
 
 const Price = () => {
@@ -26,6 +26,7 @@ const Price = () => {
     courseDuration: "3",
     individualCourse: 1500,
     group: 1000,
+
   }
 
   const tyb = { 
@@ -35,6 +36,7 @@ const Price = () => {
     courseDuration: "7",
     individualCourse: 350,
     group: 300,
+
   }
    
 
@@ -45,6 +47,7 @@ const Price = () => {
     courseDuration: "2",
     individualCourse: 1500,
     group: 1000,
+
   }
    
 
@@ -54,11 +57,7 @@ const Price = () => {
         <div className="section-spaceing ">
           <div className="app__prices-wrap">
             <div className="app__prices-list-wrap">
-
-              <div> 
-                <h3>{joga.name}</h3>
-                <img src="" alt="" />
-              </div>
+              <NamePlusIkon name={joga.name} ikon={images.jogaIkon}/> 
               <ul className="app__price">
                 <li> 
                   <p className="name">{joga.oneLesson}</p>
@@ -76,10 +75,7 @@ const Price = () => {
                   <p className='price'>od {joga.group} zł</p>
                 </li>
               </ul>
-              <div> 
-                <h3>{taj.name}</h3>
-                <img src="" alt="" />
-              </div> 
+              <NamePlusIkon name={taj.name} ikon={images.masazIkon}/>
               <ul className="app__price">
                 <li> 
                   <p className="name">{taj.oneLesson}</p>
@@ -101,10 +97,7 @@ const Price = () => {
                   <p className='price'>od {taj.group} zł</p>
                 </li>
               </ul>
-              <div> 
-                <h3>{tyb.name}</h3>
-                <img src="" alt="" />
-              </div> 
+              <NamePlusIkon name={tyb.name} ikon={images.tybetIkon}/>
               <ul className="app__price">
                 <li> 
                   <p className="name">{tyb.oneLesson}</p>
@@ -122,10 +115,7 @@ const Price = () => {
                   <p className='price'>od {tyb.group} zł</p>
                 </li>
               </ul>   
-              <div> 
-                <h3>{rel.name}</h3>
-                <img src="" alt="" />
-              </div> 
+              <NamePlusIkon name={rel.name} ikon={images.relaksIkon}/>
               <ul className="app__price">
                 <li> 
                   <p className="name">{rel.oneLesson}</p>

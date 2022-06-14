@@ -26,7 +26,7 @@ const Opinions = () => {
     },
     {
       name: "René, menadżer, Szwajcaria",
-      feedback: "Sesja masażu u Ani to prawdziwe przeżycie – podróż w głąb swojego wewnętrznego świata. W bardzo subtelny sposób przełamuje blokady i otwiera przestrzeń dla nowych wewnętrznych i zewnętrznych ruchów i doświadczeń.",
+      feedback: "Sesja masażu u Ani to prawdziwe przeżycie - podróż w głąb swojego wewnętrznego świata. W bardzo subtelny sposób przełamuje blokady i otwiera przestrzeń dla nowych wewnętrznych i zewnętrznych ruchów i doświadczeń.",
     },
     {
       name: "Gloria, stomatolog, Szwajcaria.",
@@ -35,6 +35,10 @@ const Opinions = () => {
     {
       name: "Marta, farmaceutka, Polska.",
       feedback: "Fantastyczny kurs z Joga&Masaż Ciała&Umysłu, wspaniały czas. Dziękuję!",
+    },
+    {
+      name: "Patrick, bankier, Szwajcaria.",
+      feedback: "Anna od tak dawna jest moją zaufaną terapeutką. Naprawdę mogę polecić jej sesje dla dobrego samopoczucia fizycznego i psychicznego pod każdym względem!",
     }
   ]
 

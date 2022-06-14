@@ -4,7 +4,10 @@ import relaks from "../assets/relaks.jpg";
 import jivaka from "../assets/jivakaSmall.jpg";
 import tybet from "../assets/tybet.jpg";
 import Anna from "../assets/ANNA-about.jpg";
-import quote from "../assets/quote.png";
+import jogaIkon from "../assets/joga.png";
+import relaksIkon from "../assets/relax.png";
+import tybetIkon from "../assets/tybet.png";
+import masazIkon from "../assets/mas.png";
 
 
 
@@ -17,5 +20,9 @@ export default {
     logo,
     Anna,
     jivaka,
-    quote
+    jogaIkon,
+    relaksIkon,
+    tybetIkon,
+    masazIkon,
+
 }

@@ -40,6 +40,11 @@
         @content;
     }
  }
+ @mixin lg-max {
+    @media (max-width: #{$screen-lg}) {
+        @content;
+    }
+ }
  
  // Extra large devices
  @mixin xl {

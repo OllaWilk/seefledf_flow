@@ -1,0 +1,32 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
+
+
+.app__img-modal-wrap {
+  @include flex(row, center, center);
+  width: 100%;
+  padding-bottom: 20px;
+
+  img{
+      height: 70px;
+      width: auto;
+      margin-right: 15px;
+
+      @include lg-max {
+          height: 80px;
+      }
+  }
+
+  h3 {
+      font-size: 40px;
+      margin: 20px 0;
+      font-family: $handwriting-font;
+      letter-spacing: 3px;
+      color: $color-main;
+      font-weight: $font-normal;
+
+      @include lg-max {
+          font-size: 30px;
+      }
+  }
+}

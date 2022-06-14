@@ -13,6 +13,11 @@
     @include sm-max {
         padding: 0 17px;
     }
+
+    @include sm {
+        padding: 0 17px;
+    }
+    
     @include md {
         padding: 0 4%;
     }

@@ -16,10 +16,23 @@
         margin: 20px 0 ;
     }
 
+    .app__prices-list-wrap {
+        .app__img-modal-wrap {
+            justify-content:flex-start ;
+            
+            img {
+                height: 55px;
+                width: auto;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
 
 
         h3 {
-            // border-bottom: 1px solid $color-dark;
             font-size: 20px;
             font-weight: $font-normal;
             font-family: $handwriting-font;
