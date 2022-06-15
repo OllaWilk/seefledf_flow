@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seefeld_flow/static/css/main.88b6c0d3.css",
+    "main.css": "/seefeld_flow/static/css/main.9278070d.css",
     "main.js": "/seefeld_flow/static/js/main.c7f23aac.js",
     "static/media/joga.jpg": "/seefeld_flow/static/media/joga.db511229872c475a70d3.jpg",
     "static/media/woda.jpg": "/seefeld_flow/static/media/woda.5b50ee88fec04e107195.jpg",
@@ -13,11 +13,11 @@
     "static/media/joga.png": "/seefeld_flow/static/media/joga.e4f08bde4ce1217fe8a3.png",
     "static/media/relax.png": "/seefeld_flow/static/media/relax.35918e9030b46c8ec3f8.png",
     "index.html": "/seefeld_flow/index.html",
-    "main.88b6c0d3.css.map": "/seefeld_flow/static/css/main.88b6c0d3.css.map",
+    "main.9278070d.css.map": "/seefeld_flow/static/css/main.9278070d.css.map",
     "main.c7f23aac.js.map": "/seefeld_flow/static/js/main.c7f23aac.js.map"
   },
   "entrypoints": [
-    "static/css/main.88b6c0d3.css",
+    "static/css/main.9278070d.css",
     "static/js/main.c7f23aac.js"
   ]
 }
