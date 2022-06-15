@@ -5,6 +5,10 @@
     @include flex(row-reverse, center, space-between);
     padding: 20px 0;
 
+    @include sm-max {
+      flex-direction: column;
+    }
+
     .modal-content {
       top: 0;
       transform: translate(-50%, 0%);

@@ -213,8 +213,6 @@ const Blog = () => {
               ikon={blogs[1].ikon}
 
             />
-           
-            {/* <img src={images.logo} alt="logo" /> */}
           </div>
         </div>
 
