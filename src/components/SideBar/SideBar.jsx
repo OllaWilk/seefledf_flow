@@ -8,7 +8,7 @@ const SideBar = ({openSidebar, animate}) => {
   return (
         <ul className={'toggle ' + (animate ? 'app__menu-sidebar open ' : 'app__menu-sidebar')} >
 
-          {[ 'home', 'oferta', 'cennik', 'opinie', 'o mnie', 'kontakt'].map((item) => (
+          {[ 'home', 'oferta', 'cennik', 'opinie', 'o mnie','blog', 'kontakt'].map((item) => (
           <li key={item}>
             <Link to={item} spy={true} offset={-100}  onClick={openSidebar}>
               {item}

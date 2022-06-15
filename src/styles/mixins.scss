@@ -52,6 +52,11 @@
         @content;
     }
  }
+ @mixin xl-max {
+    @media (max-width: #{$screen-xl}) {
+        @content;
+    }
+ }
 
  // Super extra large devices
  @mixin xxl {

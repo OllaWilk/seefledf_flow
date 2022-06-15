@@ -8,6 +8,8 @@ import jogaIkon from "../assets/joga.png";
 import relaksIkon from "../assets/relax.png";
 import tybetIkon from "../assets/tybet.png";
 import masazIkon from "../assets/mas.png";
+import woda from "../assets/woda.jpg";
+import oddech from "../assets/oddech.jpg";
 
 
 
@@ -24,5 +26,7 @@ export default {
     relaksIkon,
     tybetIkon,
     masazIkon,
+    woda,
+    oddech,
 
 }
