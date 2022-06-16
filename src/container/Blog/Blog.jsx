@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Headlines, OfferCart } from '../../components';
 
 import { images } from "../../constants";
@@ -215,10 +215,6 @@ const Blog = () => {
             />
           </div>
         </div>
-
-
-       
-
   </section>
   )
 }

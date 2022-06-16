@@ -36,8 +36,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-        'service_test.soft.wilk',
-        'template_testowy', 
+        'service_annaG',
+        'template_anna_gidzinska', 
         form.current, 
         'emN60zZ4izVezIl4_'
        )

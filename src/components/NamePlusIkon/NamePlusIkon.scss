@@ -13,7 +13,7 @@
       margin-right: 15px;
 
       @include lg-max {
-          height: 80px;
+          height: 70px;
       }
   }
 
@@ -26,7 +26,7 @@
       font-weight: $font-normal;
 
       @include lg-max {
-          font-size: 30px;
+          font-size: 20px;
       }
   }
 }
