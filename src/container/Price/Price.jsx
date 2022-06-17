@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { Headlines, NamePlusIkon } from '../../components';
 
 import { images } from "../../constants";
@@ -135,6 +136,7 @@ const Price = () => {
               </ul>   
             </div>
             <p className='p-text'>Abonamenty miesięczne oraz stała współpraca, także z organizacjami.</p>
+            <Link to='kontakt' className='btn header-btn'>Zamów</Link>
           </div>
         </div>
   </section>

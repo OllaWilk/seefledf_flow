@@ -14,9 +14,8 @@ const Header = () => {
         <span> joga & masaż </span>  <br/>
           ciała & umysłu
         </h1>
-        <h2> Dobrostan, równowaga <br/>
-          wzmocnienie naturalnie, <br/>
-          holistycznie, transpersonalnie, <br/>
+        <h2> Dobrostan, równowaga, wzmocnienie <br/> 
+          naturalnie, holistycznie, transpersonalnie, <br/>
           tradycyjnie i na miarę naszych czasów.</h2>
         <Link to='kontakt' className='btn header-btn'>Zamów</Link>
       </div> 
