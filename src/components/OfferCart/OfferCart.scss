@@ -2,174 +2,167 @@
 @import '../../styles/mixins.scss';
 
 .app_offer-item {
-    width: 48%;
-    @include flex(column, flex-start, center);
-    position: relative;
-    margin: 20px 0;
+  width: 48%;
+  @include flex(column, flex-start, center);
+  position: relative;
+  margin: 20px 0;
 
-    &:hover  .abstract { 
-        display: block;
-        z-index: 3;
-       
+  &:hover .abstract {
+    display: block;
+    z-index: 3;
+  }
+
+  @include sm-max {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .app__img-wrap {
+    width: 100%;
+    height: 333px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover .abstract {
+      opacity: 1;
+      display: none;
+      @include sm-max {
+        opacity: 0;
+      }
     }
+
+    img {
+      width: 100%;
+      height: 333px;
+      object-fit: cover;
+      border-radius: $radius;
+
+      &:hover .abstract {
+        display: block;
+        transform: translateX(0%);
+      }
+    }
+
+    .abstract {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      background-color: $color-light;
+      opacity: 0;
+      height: 100%;
+      transition: 0.3s linear;
+
+      @include sm-max {
+        display: none;
+      }
+    }
+  }
+
+  .app__img-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    img {
+      height: 40px;
+      width: auto;
+      margin-right: 15px;
+    }
+  }
+
+  .title {
+    margin: 20px 0;
+    font-family: $handwriting-font;
+    letter-spacing: 3px;
+    color: $color-main;
+    font-weight: $font-normal;
+  }
+
+  .abstract-sm {
+    display: none;
 
     @include sm-max {
-        width: 100%;
-        opacity: 1;
+      display: block;
+      padding: 0 0 1rem 0;
     }
+  }
 
-    .app__img-wrap {
-        
-        width: 100%;
-        height: 333px;
-        cursor: pointer;
-        position: relative;
+  .btnwhite {
+    width: 33%;
 
-        &:hover .abstract {
-            opacity: 1;
-            display: none;
-            @include sm-max {
-                opacity: 0;
-            }
-        }
-
-        img {
-            width: 100%;
-            height: 333px;
-            object-fit: cover;
-            border-radius: $radius;
-
-            &:hover .abstract {
-                display: block;
-                transform: translateX(0%);
-
-            }
-        }
-
-        .abstract {
-            position: absolute;
-            bottom: 0%;
-            left: 0%;
-            background-color: $color-light;
-            opacity: 0;
-            height: 100%;
-            transition: .3s linear;
-
-            @include sm-max {
-                display: none;
-            }
-        }
+    @include md {
+      width: 40%;
     }
-
-    .app__img-title-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-
-
-        img {
-            height: 40px;
-            width: auto;
-            margin-right: 15px
-        }
-    }
-
-    .title {
-
-        margin: 20px 0;
-        font-family: $handwriting-font;
-        letter-spacing: 3px;
-        color: $color-main;
-        font-weight: $font-normal;
-
-    }
-
-    .abstract-sm {
-        display: none;
-
-        @include sm-max {
-            display: block;
-            padding: 0 0 1rem 0;
-        }
-    }
-    
-
-    .btnwhite {
-       width: 33%;
-       
-       @include md {
-           width: 40%;
-       }
-    }
-    
+  }
 }
 
 body.active-modal {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
 }
 
-.modal, .overlay {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    z-index: 999;
-    overflow:auto;
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+  overflow: auto;
 }
 
 .overlay {
-    background: rgba(49,49,49,0.8);
+  background: rgba(49, 49, 49, 0.8);
 }
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: $color-light;
-    padding: 20px 28px;
-    border-radius: $radius;
-    width: auto;
-    min-width: 300px;
-    z-index: 9999;
-     margin: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $color-light;
+  padding: 20px 28px;
+  border-radius: $radius;
+  width: auto;
+  min-width: 300px;
+  z-index: 9999;
+  margin: 20px 0;
 
-    @include lg-max {
-        width: 95vw;
-        height: auto;
-        top: 0%;
-    }
-    @include xl-max {
-        width: 95vw;
-        top: 0%;
-        transform: translate(-50%, 0%);
-        height: auto;
-    }
+  span {
+    font-weight: $font-semibold;
+  }
 
-  
-    
-        
+  @include lg-max {
+    width: 95vw;
+    height: auto;
+    top: 0%;
+  }
+  @include xl-max {
+    width: 95vw;
+    top: 0%;
+    transform: translate(-50%, 0%);
+    height: auto;
+  }
 }
 
 .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 
-    &:hover {
-        color: $color-main;
-    }
+  &:hover {
+    color: $color-main;
+  }
 }

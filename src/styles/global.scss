@@ -1,69 +1,74 @@
-@import "./settings.scss";
-@import "./mixins.scss";
+@import './settings.scss';
+@import './mixins.scss';
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: $color-light;
-    font-family: $default-font;
-    font-size: $base-size;
-    line-height: $line-height;
-    font-weight: $font-normal;
-    color: $color-dark;
-    text-align: left;
+  background: $color-light;
+  font-family: $default-font;
+  font-size: $base-size;
+  line-height: $line-height;
+  font-weight: $font-normal;
+  color: $color-dark;
+  text-align: left;
 }
 
 .container {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1110px;
-    padding: 0 30px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 30px;
 
-
-    @include sm-max {
-        padding: 0 16px;
-    } 
+  @include sm-max {
+    padding: 0 16px;
+  }
 }
 
 .section-spaceing {
-    // background-color: pink;
-    width: 70%;
-    // min-height: 70vh;
-    margin: 20px 0 90px 30% ;
+  // background-color: pink;
+  width: 70%;
+  // min-height: 70vh;
+  margin: 20px 0 90px 30%;
 
-    @include md {
-        width: 100%;
-        margin: 20px 0 90px 0;
-
-    }
+  @include md {
+    width: 100%;
+    margin: 20px 0 90px 0;
+  }
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: unset;
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
 }
 
 ul {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    text-decoration: none;
-    list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .gradient {
-	background: linear-gradient(-45deg, $gold-1, $gold-2, $gold-3, $gold-4);
-	background-size: 500% 500%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
-    width: 100%;
+  background: linear-gradient(-45deg, $gold-1, $gold-2, $gold-3, $gold-4);
+  background-size: 500% 500%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  width: 100%;
+}
+
+p {
+  text-align: justify;
 }

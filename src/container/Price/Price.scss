@@ -1,56 +1,55 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
-
 .app__prices-wrap {
-    // display: flex;
+  // display: flex;
+  justify-content: space-between;
+  // flex-direction: row-reverse;
+  align-items: center;
+
+  .p-text {
+    margin: 20px 0;
+  }
+
+  .app__logo {
+    margin: 20px 0;
+  }
+
+  .app__prices-list-wrap {
+    .app__img-modal-wrap {
+      justify-content: flex-start;
+
+      img {
+        height: 55px;
+        width: auto;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: $font-normal;
+    font-family: $handwriting-font;
+    color: $color-main;
+    margin: 20px 0;
+  }
+
+  ul {
+    border-bottom: 1px solid $color-dark;
+  }
+
+  .app__price li {
+    display: flex;
     justify-content: space-between;
-    // flex-direction: row-reverse;
-    align-items: center;
+    padding: 20px 80px;
+    margin-left: 0vw;
 
-    .p-text{
-        margin: 20px 0;
+    @include sm-max {
+      padding: 20px 0px;
     }
-    
-    .app__logo {
-        margin: 20px 0 ;
-    }
-
-    .app__prices-list-wrap {
-        .app__img-modal-wrap {
-            justify-content:flex-start ;
-            
-            img {
-                height: 55px;
-                width: auto;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-        }
-    }
-
-
-        h3 {
-            font-size: 20px;
-            font-weight: $font-normal;
-            font-family: $handwriting-font;
-            color: $color-main;
-            margin: 20px 0;
-    
-        }
-
-        ul {
-            border-bottom: 1px solid $color-dark;
-        }
-
-        .app__price li {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 80px;
-            margin-left: 0vw;
-            
-        }
-    
+  }
 }
