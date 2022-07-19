@@ -128,7 +128,6 @@ const Offer = () => {
           wygląd wskazuje na kilkadziesiąt lat mniej.
           <br />
           <br />
-          <br />
           Regularna praktyka TYBETAŃSKICH ĆWICZEŃ doskonale wpływa na kondycję i
           ruchomość wszystkich stawów. Polega jednocześnie na pracy z oddechem,
           co powoduje stan pogodnej akceptacji otaczającego nas świata. Pojawia
@@ -152,8 +151,8 @@ const Offer = () => {
         <p>
           Kompleksowa regeneracja na poziomie fizycznym, mentalnym i
           energetycznym za pomocą '5' żywiołów, '6' zmysłów oraz '7' nawyków.
-          Gotowy program odnowy biologicznej i duchowej ..... dobrany specjalnie
-          dla Ciebie i do zastosowania każdego dnia.
+          Gotowy program odnowy biologicznej i duchowej, dobrany specjalnie dla
+          Ciebie i do zastosowania każdego dnia.
         </p>
       ),
       content: (

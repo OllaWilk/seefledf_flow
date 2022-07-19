@@ -136,7 +136,8 @@ const Price = () => {
             </ul>
           </div>
           <p className="p-text">
-            Abonamenty miesięczne oraz stała współpraca, także z organizacjami.
+            Pakiety, abonamenty miesięczne oraz stała współpraca, także z
+            organizacjami.
           </p>
           <Link to="kontakt" className="btn header-btn">
             Zamów

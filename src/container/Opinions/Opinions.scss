@@ -1,101 +1,98 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
-
 .app__opinions-content {
-    @include flex( row, center, center);
-    // margin: 40px 0 90px 0;
-    height: 50vh;
+  @include flex(row, center, center);
+  // margin: 40px 0 90px 0;
+  height: 50vh;
+
+  @include sm-max {
+    height: auto;
+  }
+
+  .app__testimonial-item {
+    @include flex(row, center, center);
 
     @include sm-max {
-        height: auto;
+      display: block;
+      height: auto;
+      position: relative;
     }
- 
-    .app__testimonial-item { 
-        @include flex( row, center, center);
-      
+
+    .app__next {
+      @include flex(row, center, center);
+      cursor: pointer;
+
+      @include sm-max {
+        display: block;
+        top: -20px;
+        position: absolute;
+
+        margin-bottom: 20px;
+        text-align: center;
+
+        &:nth-child(3) {
+          width: auto;
+          right: 0;
+        }
+      }
+
+      &:hover {
+        color: $color-main;
+      }
+
+      svg {
+        width: 25px;
+        height: 25px;
+        margin: 10px 0;
+      }
+    }
+
+    .app__testimonial-content {
+      margin: 0 24px;
+      padding: 0 1rem;
+
+      @include sm-max {
+        margin: 0 0;
+        padding: 0;
+      }
+
+      .app__testimonial-quote {
+        position: relative;
+        margin-bottom: 25px;
+
         @include sm-max {
-            display: block;
-            height: auto;
-            position: relative;
+          height: auto;
         }
 
+        img {
+          position: absolute;
+          width: 24px;
+          height: 17px;
 
-        .app__next {
-            @include flex( row, center, center);
-            cursor: pointer;
-
-            @include sm-max {
-                display: block;
-                top: -20px;
-                position: absolute;
-                      
-                margin-bottom: 20px;
-                text-align: center;
-
-                &:nth-child(3) {
-                    width: auto;
-                    right: 0;
-           
-                }
-            }
-            
-            &:hover {
-                color: $color-main;
-            }
-
-            svg {
-                width: 25px;
-                height: 25px;
-                margin: 10px 0;
-            }
+          &:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+          }
         }
 
-        .app__testimonial-content {
-            margin: 0 24px;
-            padding: 0 1rem;
+        p {
+          padding: 0 0px;
 
-            @include sm-max {
-                margin: 0 0;
-                padding: 0 ;
-            }
-
-            .app__testimonial-quote {
-                position: relative;
-                margin-bottom: 25px;
-
-                @include sm-max {
-                    height: auto;
-                }
-
-                img {
-                    position: absolute;   
-                    width: 24px;
-                    height: 17px;
-
-                    &:nth-child(3) {
-                        bottom: 0;
-                        right: 0;
-                        transform: rotate(180deg);
-                    }
-                }
-
-                p {
-                    padding: 0 40px;
-
-                    @include sm-max {
-                        padding: 20px 0 0 0;
-                        text-align: center;
-                    }
-                }
-            }
-
-            .app__name {
-                // color: $color-main;
-                // border-top: 1px solid $color-dark;
-                padding-top: 10px;
-                text-align: right;
-            }
+          @include sm-max {
+            padding: 20px 0 0 0;
+            text-align: center;
+          }
         }
+      }
+
+      .app__name {
+        // color: $color-main;
+        // border-top: 1px solid $color-dark;
+        padding-top: 10px;
+        text-align: right;
+      }
     }
+  }
 }

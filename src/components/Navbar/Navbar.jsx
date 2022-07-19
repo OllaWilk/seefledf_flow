@@ -22,7 +22,12 @@ const Navbar = () => {
       <div className="navbar-menu">
         <Link to="home" className="app__navbar-logo">
           <img src={images.logo} alt="logo" />
-          Anna Gidzińska
+          <br />
+          <div className="app__navbar-logo-text">
+            <p>Anna Gidzińska</p>
+            <p>JOGA & MASAŻ</p>
+            <p>ciała i umysłu</p>
+          </div>
         </Link>
         <div onClick={toggleSidebar}>
           {toggle ? <HiX /> : <AiOutlineMenu />}

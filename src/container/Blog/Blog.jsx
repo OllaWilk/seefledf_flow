@@ -221,45 +221,45 @@ const Blog = () => {
           <br />
           <span>Jak działa woda szungitowa na nasze ciało?</span>
           <br />
-          ✔️ Ma działanie przeciwbólowe oraz przeciwzapalne. <br />
+          ✓ Ma działanie przeciwbólowe oraz przeciwzapalne. <br />
           <br />
-          ✔️ Unikalne są jej bakteriobójcze właściwości oraz trwały efekt
+          ✓ Unikalne są jej bakteriobójcze właściwości oraz trwały efekt
           antyhistaminowy. <br />
           <br />
-          ✔️ Pomaga w leczeniu chorób zapalnych, alergicznych, wirusowych,
+          ✓ Pomaga w leczeniu chorób zapalnych, alergicznych, wirusowych,
           skórnych, schorzeń stawów i przemiany materii. <br />
           <br />
-          ✔️ Regularne picie zaleca się przy nadkwasocie, zapaleniu jelita
+          ✓ Regularne picie zaleca się przy nadkwasocie, zapaleniu jelita
           grubego, przeziębieniu (grypie, zapaleniu oskrzeli), piasku w żółci i
           nerkach, cukrzycy, artretyzmie.
           <br />
           <br />
-          ✔️ Pomaga przywrócić dobrą odporność i energię przy syndromie
+          ✓ Pomaga przywrócić dobrą odporność i energię przy syndromie
           chronicznego zmęczenia, depresji, braku szczęścia.
           <br />
           <br />
-          ✔️ Udowodniono, że fulereny zapobiegają pojawieniu się oraz rozwojowi
+          ✓ Udowodniono, że fulereny zapobiegają pojawieniu się oraz rozwojowi
           arteriosklerozy. <br />
           <br />
-          ✔️ Jako okład jest lekarstwem na wrzody, długo gojące się rany,
+          ✓ Jako okład jest lekarstwem na wrzody, długo gojące się rany,
           odleżenia, furunkuły, łuszczycę, dermatyt atopiczny. Świetnie działa
           przeciwbólowo przy poparzeniach.
           <br />
           <br />
-          ✔️ Stosowana do codziennego mycia zwiększa elastyczność i tonus skóry,
+          ✓ Stosowana do codziennego mycia zwiększa elastyczność i tonus skóry,
           likwiduje drobne zmarszczki, łuszczenia się, obrzęki. <br />
           <br />
-          ✔️ Fulereny szungitu przywracają strukturę dermalną oraz przyspieszają
+          ✓ Fulereny szungitu przywracają strukturę dermalną oraz przyspieszają
           proces regeneracji tkanek. Bardzo korzystnie wpływają także na objawy
           trądziku młodzieńczego. Szungit przywraca młodość i piękno skóry.
           <br />
           <br />
-          ✔️ Również płukanie włosów wodą szungitową chroni przed ich wypadaniem
+          ✓ Również płukanie włosów wodą szungitową chroni przed ich wypadaniem
           i zapobiega łysieniu, wzmacnia cebulki oraz nadaje włosom blasku i
           jedwabistości.
           <br />
           <br />
-          ✔️ Szungit jest też uniwersalnym sorbentem (czyli pochłania szkodliwe
+          ✓ Szungit jest też uniwersalnym sorbentem (czyli pochłania szkodliwe
           pierwiastki). Ze względu na możliwość oczyszczania wody ze szkodliwych
           domieszek nie ma sobie równych. Absorbuje on na swojej powierzchni do
           95% zanieczyszczeń, pozbawia mętności i nadaje wodzie źródlany smak.
@@ -268,11 +268,11 @@ const Blog = () => {
           chloroorganiczne, produkty naftowe, radionuklidy, jaja helmintów,
           wirusy oraz bakterie. <br />
           <br />
-          ✔️ Widoczne efekty daje stosowanie wody szungitowej do płukania
-          gardła, jamy ustnej, nosa przy anginach, paradontozie, nieżytach.
+          ✓ Widoczne efekty daje stosowanie wody szungitowej do płukania gardła,
+          jamy ustnej, nosa przy anginach, paradontozie, nieżytach.
           <br />
           <br />
-          ✔️ Kąpiele szungitowe należą do podstawowych procedur w rosyjskich
+          ✓ Kąpiele szungitowe należą do podstawowych procedur w rosyjskich
           klinikach i łaźniach uzdrawiających. Źródła podają całą listę
           dolegliwości leczonych w ten sposób:
           <br />
