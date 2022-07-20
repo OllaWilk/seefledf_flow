@@ -12,11 +12,6 @@
     z-index: 3;
   }
 
-  @include sm-max {
-    width: 100%;
-    opacity: 1;
-  }
-
   .app__img-wrap {
     width: 100%;
     height: 333px;
@@ -26,9 +21,6 @@
     &:hover .abstract {
       opacity: 1;
       display: none;
-      @include sm-max {
-        opacity: 0;
-      }
     }
 
     img {
@@ -51,10 +43,6 @@
       opacity: 0;
       height: 100%;
       transition: 0.3s linear;
-
-      @include sm-max {
-        display: none;
-      }
     }
   }
 
@@ -81,18 +69,13 @@
 
   .abstract-sm {
     display: none;
-
-    @include sm-max {
-      display: block;
-      padding: 0 0 1rem 0;
-    }
   }
 
   .btnwhite {
     width: 33%;
 
     @include md {
-      width: 40%;
+      width: 40% !important;
     }
   }
 }
@@ -139,7 +122,7 @@ body.active-modal {
   background: $color-light;
   padding: 20px 28px;
   border-radius: $radius;
-  width: auto;
+  width: 95vw;
   min-width: 300px;
   z-index: 9999;
   margin: 20px 0;
@@ -171,5 +154,26 @@ body.active-modal {
 
   &:hover {
     color: $color-main;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .app_offer-item {
+    width: 100%;
+    opacity: 1;
+
+    .app__img-wrap {
+      &:hover .abstract {
+        opacity: 0;
+      }
+
+      .abstract {
+        display: none;
+      }
+    }
+    .abstract-sm {
+      display: block;
+      padding: 0 0 1rem 0;
+    }
   }
 }

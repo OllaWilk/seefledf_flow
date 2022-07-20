@@ -18,7 +18,6 @@ $gold-4: #edc967;
 
 $shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 
-
 /*fonts*/
 
 $default-font: 'Inter', sans-serif;
@@ -40,19 +39,18 @@ $subheader-size: 1rem;
 $line-height: 1.7;
 
 /* Animation */
-$transition: all .3s ease-in-out;
-
+$transition: all 0.3s ease-in-out;
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*Another*/
@@ -61,10 +59,13 @@ $setion-margin-left: 26%;
 
 /*respons*/
 
-$screen-sm: 576px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1200px;
-$screen-xxl: 1400px;
-
-
+// $screen-sm: 576px;
+$screen-sm: 36rem;
+// $screen-md: 768px;
+$screen-md: 48rem;
+// $screen-lg: 992px;
+$screen-lg: 62rem;
+// $screen-xl: 1200px;
+$screen-xl: 75rem;
+// $screen-xxl: 1400px;
+$screen-xxl: 87.5rem;

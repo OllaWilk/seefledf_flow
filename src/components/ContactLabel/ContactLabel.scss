@@ -2,39 +2,42 @@
 @import '../../styles/mixins.scss';
 
 .contact-wrapper {
-    @include flex( column, flex-start, space-around);
+  @include flex(column, flex-start, space-around);
+  width: 100%;
+  // height: 100px;
+
+  // @include sm-max {
+  //     justify-content: center;
+  // }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+  }
+
+  p {
+    font-weight: $font-bold;
+  }
+
+  .wrapper-icon {
+    @include flex(row, center, space-between);
     width: 100%;
     // height: 100px;
 
-    @include sm-max {
-        justify-content: center;
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+
+      @include md-max {
+        margin-right: 10px;
+      }
     }
 
-    p {
-        font-weight: $font-bold;
+    h3 {
+      font-size: $base-size;
+      width: 100%;
+      // background-color: green;
+      font-weight: $font-normal;
     }
-    
-
-    .wrapper-icon {
-        @include flex( row, center, space-between);
-        width: 100%;
-        // height: 100px;
-
-        svg {
-            width: 20px;
-            height: 20px;
-            margin-right: 20px;
-
-            @include md-max {
-                margin-right: 10px;
-            }
-        }
-
-        h3 {
-            font-size: $base-size;
-            width: 100%;
-            // background-color: green;
-            font-weight: $font-normal;
-        }
-    }
+  }
 }
