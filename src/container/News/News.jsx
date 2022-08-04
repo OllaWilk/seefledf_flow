@@ -2,10 +2,10 @@ import React from 'react';
 import { Headlines, OfferCart } from '../../components';
 
 import { images } from '../../constants';
-import './Blog.scss';
+import './News.scss';
 
-const Blog = () => {
-  const blogs = [
+const News = () => {
+  const news = [
     {
       title: 'Oddech',
       content: (
@@ -388,21 +388,21 @@ const Blog = () => {
   ];
 
   return (
-    <section id="blog">
-      <Headlines props={'Blog'} />
+    <section id="news">
+      <Headlines props={'News'} />
       <div className="section-spaceing ">
-        <div className="app__blog-wraper">
+        <div className="app__news-wraper">
           <OfferCart
-            title={blogs[1].title}
-            content={blogs[1].content}
-            img={blogs[1].img}
-            ikon={blogs[1].ikon}
+            title={news[1].title}
+            content={news[1].content}
+            img={news[1].img}
+            ikon={news[1].ikon}
           />
           <OfferCart
-            title={blogs[0].title}
-            content={blogs[0].content}
-            img={blogs[0].img}
-            ikon={blogs[0].ikon}
+            title={news[0].title}
+            content={news[0].content}
+            img={news[0].img}
+            ikon={news[0].ikon}
           />
         </div>
       </div>
@@ -410,4 +410,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default News;

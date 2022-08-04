@@ -65,6 +65,10 @@
     letter-spacing: 3px;
     color: $color-main;
     font-weight: $font-normal;
+
+    @include sm-max {
+      font-size: 18px;
+    }
   }
 
   .abstract-sm {
@@ -72,11 +76,7 @@
   }
 
   .btnwhite {
-    width: 33%;
-
-    @include md {
-      width: 40% !important;
-    }
+    width: auto;
   }
 }
 
@@ -129,6 +129,9 @@ body.active-modal {
 
   span {
     font-weight: $font-semibold;
+    @include sm-max {
+      font-size: 14px;
+    }
   }
 
   @include lg-max {
@@ -141,6 +144,10 @@ body.active-modal {
     top: 0%;
     transform: translate(-50%, 0%);
     height: auto;
+  }
+
+  @include sm-max {
+    font-size: 14px;
   }
 }
 
@@ -173,7 +180,8 @@ body.active-modal {
     }
     .abstract-sm {
       display: block;
-      padding: 0 0 1rem 0;
+      padding: 0 0 0rem 0;
+      font-size: 14px;
     }
   }
 }

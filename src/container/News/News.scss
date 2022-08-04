@@ -1,0 +1,25 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
+
+.app__news-wraper {
+  @include flex(row-reverse, center, space-between);
+  padding: 20px 0;
+
+  @include sm-max {
+    flex-direction: column;
+  }
+
+  .modal-content {
+    top: 0;
+    transform: translate(-50%, 0%);
+  }
+
+  img {
+    cursor: default;
+  }
+
+  span {
+    font-weight: $font-semibold;
+    font-size: large;
+  }
+}

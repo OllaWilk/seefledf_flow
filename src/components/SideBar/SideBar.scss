@@ -1,40 +1,42 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
-
 .app__menu-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  @include flex(column, center, center);
+  transform: translateX(101%);
+  transition: 0.4s ease-in-out;
+  z-index: 800;
+  background: $color-light;
 
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
+  @include sm-max {
     width: 100%;
-    @include flex(column, center, center);
-    transform: translateX(101%);
-    transition: 0.4s ease-in-out;
-    z-index: 800;
-    background: $color-light;
+  }
 
-    li {
-      margin: .5rem 0;
-      text-transform: uppercase;
+  li {
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    transition: $transition;
+    cursor: pointer;
+
+    a {
       transition: $transition;
-      cursor: pointer;
 
-      a {
-        transition: $transition;
+      @include sm-max {
+        font-size: 14px;
+      }
 
-        &:hover {
-          color: $color-main;
-        }
+      &:hover {
+        color: $color-main;
       }
     }
-
-  @include sm {
-    width: 30%;
-  } 
+  }
 }
 
 .open {
-  transform: translateX(0%);;
+  transform: translateX(0%);
 }

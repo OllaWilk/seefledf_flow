@@ -1,18 +1,17 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/settings.scss';
 
-
 .btn {
-    @include button($color-dark, $color-light, $color-dark, auto);
-    transition: $transition;
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: $radius;
-    font-size: .6em;
-    padding: .5rem 1rem;
-    letter-spacing: 2px;
-    font-weight: $font-normal;
+  @include button($color-dark, $color-light, $color-dark, auto);
+  transition: $transition;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: $radius;
+  font-size: 0.6em;
+  padding: 0.5rem 1rem;
+  letter-spacing: 2px;
+  font-weight: $font-normal;
 
-    cursor: pointer;
-  }
+  cursor: pointer;
+}

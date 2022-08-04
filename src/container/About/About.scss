@@ -19,5 +19,14 @@
     font-weight: $font-bold;
     margin-bottom: 20px;
     font-size: $base-size;
+
+    @include sm-max {
+      font-size: 14px;
+    }
+  }
+  p {
+    @include sm-max {
+      font-size: 14px;
+    }
   }
 }

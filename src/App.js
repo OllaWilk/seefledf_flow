@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   About,
-  Blog,
+  News,
   Contact,
   Footer,
   Header,
@@ -24,7 +24,7 @@ const App = () => {
         <Opinions />
         <Price />
         <About />
-        <Blog />
+        <News />
         <Contact />
       </div>
       <Footer />

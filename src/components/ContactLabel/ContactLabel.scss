@@ -17,11 +17,17 @@
   p {
     font-weight: $font-bold;
   }
+  @include sm-max {
+    font-size: 14px;
+  }
 
   .wrapper-icon {
     @include flex(row, center, space-between);
     width: 100%;
     // height: 100px;
+    @include sm-max {
+      margin: 10px 0;
+    }
 
     svg {
       width: 20px;
@@ -38,6 +44,10 @@
       width: 100%;
       // background-color: green;
       font-weight: $font-normal;
+
+      @include sm-max {
+        font-size: 14px;
+      }
     }
   }
 }

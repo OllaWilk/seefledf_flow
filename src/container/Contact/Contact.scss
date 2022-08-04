@@ -2,111 +2,104 @@
 @import '../../styles/settings.scss';
 
 .app__contact {
-    width: 100%;
+  width: 100%;
 
-    @include flex (row-reverse, center, space-between);
-    margin: 40px 0 110px 0;
+  @include flex(row-reverse, center, space-between);
+  margin: 40px 0 110px 0;
+
+  @include sm-max {
+    flex-direction: column-reverse;
+    margin: 0px 0 110px 0;
+  }
+
+  .app__contact-form {
+    width: 70%;
 
     @include sm-max {
-        flex-direction: column-reverse;
-        margin: 0px 0 110px 0;
+      width: 100%;
     }
 
-    .app__contact-form {
-       width:70%;
-
-       @include sm-max {
-            width: 100%;
-        }
-
-        @include md {
-            width: 100%;
-        }
-
-        
-
-        h3 {
-            display: none;
-           
-
-            @include sm-max {
-                display: block;
-                font-size: $base-size;
-                font-weight: $font-bold;
-                padding-bottom: 20px;
-            }
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            padding-left: 96px;
-            border-left: 1px solid $color-dark;
-           
-
-            @include sm-max {
-                padding-left: 0;
-                border-left: none;
-
-            }
-
-            @include md {
-                padding-left: 0px;
-                border-left: none;
-
-            }
-
-           
-            input, textarea {
-                padding: 10px 0;
-                border: none;
-                border-bottom: 1px solid $color-dark;
-                height: 40px;
-                margin: 5px 0;
-                font-size: $base-size;
-                outline: none;
-                background-color: $color-light;
-                &::placeholder {
-                    font-size: $base-size;
-                }
-            }
-
-            textarea {
-                height: 200px;
-            }
-
-            button {
-                margin-top: 40px;
-            }
-        }
+    @include md {
+      width: 100%;
     }
 
-    .app__contact-items  {
-        height:435px;
-        width: 30%;
-        @include flex( column, flex-start, space-between);
+    h3 {
+      display: none;
 
-        @include sm-max {
-            width: 100%;
-            height: auto;
-            margin-bottom: 40px;
-            
-        }
-
-        @include md {
-            width: 100%;
-        }
-
-
-        .app__contact-label-item {
-            width: 100%;
-            
-
-            @include sm-max {
-               
-                border-bottom: 1px solid $color-dark;
-                padding: 20px 0;
-            }
-        } 
+      @include sm-max {
+        display: block;
+        font-size: $base-size;
+        font-weight: $font-bold;
+        padding-bottom: 20px;
+      }
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding-left: 96px;
+      border-left: 1px solid $color-dark;
+
+      @include sm-max {
+        padding-left: 0;
+        border-left: none;
+      }
+
+      @include md {
+        padding-left: 0px;
+        border-left: none;
+      }
+
+      input,
+      textarea {
+        padding: 10px 0;
+        border: none;
+        border-bottom: 1px solid $color-dark;
+        height: 40px;
+        margin: 5px 0;
+        font-size: $base-size;
+        outline: none;
+        background-color: $color-light;
+        &::placeholder {
+          font-size: $base-size;
+          @include sm-max {
+            font-size: 14px;
+          }
+        }
+      }
+
+      textarea {
+        height: 200px;
+      }
+
+      button {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .app__contact-items {
+    height: 435px;
+    width: 30%;
+    @include flex(column, flex-start, space-between);
+
+    @include sm-max {
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+
+    @include md {
+      width: 100%;
+    }
+
+    .app__contact-label-item {
+      width: 100%;
+
+      @include sm-max {
+        border-bottom: 1px solid $color-dark;
+        padding: 20px 0;
+      }
+    }
+  }
 }

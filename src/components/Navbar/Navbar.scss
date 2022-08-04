@@ -45,6 +45,9 @@ nav {
 
     .app__navbar-logo-text {
       @include flex(column, flex-start, center);
+      @include sm-max {
+        font-size: 14px;
+      }
 
       p:last-child {
         text-transform: lowercase;

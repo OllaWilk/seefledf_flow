@@ -25,7 +25,7 @@
 
       @include sm-max {
         display: block;
-        top: -20px;
+        top: 0px;
         position: absolute;
 
         margin-bottom: 20px;
@@ -63,6 +63,11 @@
 
         @include sm-max {
           height: auto;
+
+          p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+          }
         }
 
         img {
@@ -88,10 +93,12 @@
       }
 
       .app__name {
-        // color: $color-main;
-        // border-top: 1px solid $color-dark;
         padding-top: 10px;
         text-align: right;
+
+        @include sm-max {
+          font-size: 14px;
+        }
       }
     }
   }

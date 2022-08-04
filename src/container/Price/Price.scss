@@ -9,6 +9,10 @@
 
   .p-text {
     margin: 20px 0;
+
+    @include sm-max {
+      font-size: 14px;
+    }
   }
 
   .app__logo {
@@ -24,8 +28,8 @@
         width: auto;
       }
 
-      h3 {
-        font-size: 20px;
+      @include sm-max {
+        margin-top: 20px;
       }
     }
   }
@@ -36,6 +40,11 @@
     font-family: $handwriting-font;
     color: $color-main;
     margin: 20px 0;
+
+    @include sm-max {
+      font-size: 16px;
+      margin: 0;
+    }
   }
 
   ul {
@@ -50,6 +59,7 @@
 
     @include sm-max {
       padding: 20px 0px;
+      font-size: 14px;
     }
   }
 }
