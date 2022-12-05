@@ -16,6 +16,10 @@
 
   p {
     font-weight: $font-bold;
+
+    &:last-child{
+      font-weight: normal;
+    }
   }
   @include sm-max {
     font-size: 14px;

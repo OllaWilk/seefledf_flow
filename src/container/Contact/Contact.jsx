@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 import { Headlines, ContactLabel } from '../../components';
 
-import { BsFillTelephoneFill, BsWhatsapp, BsSignal } from 'react-icons/bs';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 import { SiGmail, SiGooglemaps } from 'react-icons/si';
 import { GrContact } from 'react-icons/gr';
 
@@ -12,30 +12,42 @@ import './Contact.scss';
 const Contact = () => {
   const contactLabels = [
     {
-      title: 'Zadzwoń',
+      title: 'Zadzwoń:',
       ikon: <BsFillTelephoneFill />,
       text: '739 978 899',
     },
     {
-      title: 'Whatsapp i Signal',
+      title: 'Whatsapp i Signal:',
       ikon: <GrContact />,
       text: '+48 739 978 899',
     },
-    // {
-    //   title: 'Signal',
-    //   ikon: <BsSignal />,
-    //   text: '+48 739 978 899',
-    // },
     {
-      title: 'Napisz',
+      title: 'Napisz:',
       ikon: <SiGmail />,
       text: 'namshejeshe@gmail.com',
     },
     {
-      title: 'Przyjedź',
+      title: 'Przyjedź:',
       ikon: <SiGooglemaps />,
-      text: 'ul. Pereca 16/13',
-      zipCode: '53-516 Wrocław',
+      text: (
+        <p className="adres-style">
+          {' '}
+          Gabinet "Między Nami" <br /> ul. Grabiszyńska 75a/6 <br /> 53-503
+          Wrocław <br /> Zapraszamy w weekendy <br /> w godz. 10.00-20.00
+        </p>
+      ),
+    },
+    {
+      ikon: <SiGooglemaps />,
+      text: (
+        <p>
+          Dom Jesionów <br />
+          Idzików 2A
+          <br />
+          57-500 Bystrzyca Kłodzka <br /> Zapraszamy codziennie
+          <br />w godz. 10.00-20.00
+        </p>
+      ),
     },
   ];
 
@@ -82,6 +94,7 @@ const Contact = () => {
               title="Imie"
               required
             />
+
             <input
               type="email"
               name="user_email"
@@ -107,12 +120,15 @@ const Contact = () => {
         <div className="app__contact-items">
           {contactLabels.map((contactLabel, index) => (
             <div className="app__contact-label-item" key={index}>
+              <br />
               <ContactLabel
                 title={contactLabel.title}
                 ikon={contactLabel.ikon}
+                name={contactLabel.name}
                 text={contactLabel.text}
                 zipCode={contactLabel.zipCode}
               />
+              <br />
             </div>
           ))}
         </div>

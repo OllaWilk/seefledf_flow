@@ -30,13 +30,23 @@ nav {
     transition: $transition;
     z-index: 900;
 
-    img {
-      height: 50px;
+    @media (max-width: 269px) {
+      @include flex(column, center, space-between);
+    }
+
+
+    img { 
+      height: 80px;
       margin-right: 20px;
+      @include sm-max {
+        margin-right: 10px;
+        height: 50px;
+      }
+      
     }
 
     .app__navbar-logo {
-      text-transform: uppercase;
+
       cursor: pointer;
       font-size: $base-size;
       display: flex;
@@ -49,8 +59,27 @@ nav {
         font-size: 14px;
       }
 
+      p:first-child {
+        font-size: 20px;
+        @include sm-max {
+          font-size: 15px;
+        }
+      }
+
+      p:nth-child(2) {
+        text-transform: uppercase;
+        @include sm-max {
+          font-size: 12px;
+        }
+        
+      }
+
       p:last-child {
-        text-transform: lowercase;
+        font-size: 20px;
+        font-family: $handwriting-font;
+        @include sm-max {
+          font-size: 15px;
+        }
       }
     }
 
@@ -59,6 +88,11 @@ nav {
       cursor: pointer;
       width: 1.5rem;
       height: 1.5rem;
+      @include sm-max {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-top: 1rem;
+      }
     }
   }
 }

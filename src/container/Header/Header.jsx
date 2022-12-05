@@ -13,7 +13,7 @@ const Header = () => {
         </h1> */}
         <h2>
           Dobrostan, równowaga, wzmocnienie <br />
-          naturalnie, holistycznie, transpersonalnie, <br />
+          naturalnie i holistycznie, <br />
           tradycyjnie i na miarę naszych czasów.
         </h2>
         <Link to="kontakt" className="btn header-btn">

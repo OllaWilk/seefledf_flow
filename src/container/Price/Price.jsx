@@ -38,7 +38,7 @@ const Price = () => {
   const rel = {
     name: 'Relaksacja i Higiena',
     oneLesson: '1 godz. konsultacji',
-    oneLessonPrice: 75,
+    oneLessonPrice: 100,
     courseDuration: '2',
     individualCourse: 1500,
     group: 1000,
@@ -48,6 +48,16 @@ const Price = () => {
     <section id="cennik">
       <Headlines props={'Cennik'} />
       <div className="section-spaceing ">
+        <div className="voucher-wraper">
+          <img src={images.bon} alt="bon" />
+          <div className="bon">
+            <p> Bony podarunkwe ważne przez 3 miesiące od daty zakupu. </p>
+            <Link to="kontakt" className="btn header-btn">
+              Zamów
+            </Link>
+          </div>
+        </div>
+
         <div className="app__prices-wrap">
           <div className="app__prices-list-wrap">
             <NamePlusIkon name={joga.name} ikon={images.jogaIkon} />
@@ -121,9 +131,7 @@ const Price = () => {
                 <p className="price">{rel.oneLessonPrice} zł</p>
               </li>
               <li>
-                <p className="name">
-                  Kursy podstawowy {rel.courseDuration} dniowy:
-                </p>
+                <p className="name">Program {rel.courseDuration} dniowy:</p>
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
@@ -137,7 +145,7 @@ const Price = () => {
           </div>
           <p className="p-text">
             Pakiety, abonamenty miesięczne oraz stała współpraca, także z
-            organizacjami.
+            organizacjami. <br />* Ceny aktualne do końca roku
           </p>
           <Link to="kontakt" className="btn header-btn">
             Zamów

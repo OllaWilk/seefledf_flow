@@ -24,9 +24,9 @@ const Navbar = () => {
           <img src={images.logo} alt="logo" />
           <br />
           <div className="app__navbar-logo-text">
-            <p>Anna Gidzińska</p>
-            <p>JOGA & MASAŻ</p>
+            <p><span>JOGA & MASAŻ</span></p>
             <p>ciała i umysłu</p>
+            <p>Anna Gidzińska</p>
           </div>
         </Link>
         <div onClick={toggleSidebar}>
