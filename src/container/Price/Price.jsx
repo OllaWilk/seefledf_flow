@@ -50,6 +50,8 @@ const Price = () => {
       <div className="section-spaceing ">
         <div className="voucher-wraper">
           <img src={images.bon} alt="bon" />
+          <img src={images.sesja} alt="sesj" />
+          <img src={images.kursy} alt="kursy" />
           <div className="bon">
             <p> Bony podarunkwe ważne przez 3 miesiące od daty zakupu. </p>
             <Link to="kontakt" className="btn header-btn">

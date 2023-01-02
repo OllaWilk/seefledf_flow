@@ -11,6 +11,8 @@ import masazIkon from '../assets/mas.png';
 import woda from '../assets/woda.jpg';
 import oddech from '../assets/oddech.jpg';
 import bon from '../assets/bon.png';
+import kursy from '../assets/kursy.png';
+import sesja from '../assets/sesja.png';
 
 export default {
   joga,
@@ -26,4 +28,6 @@ export default {
   woda,
   oddech,
   bon,
+  kursy,
+  sesja,
 };
