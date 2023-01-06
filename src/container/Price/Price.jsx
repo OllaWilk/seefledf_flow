@@ -10,18 +10,18 @@ const Price = () => {
     name: 'Joga Qi Gong',
     oneLesson: '1 godz. konsultacji',
     oneLessonPrice: 150,
-    courseDuration: ` Kursy podstawowe i zaawansowane 3,5 dniowe:`,
+    courseDuration: ` Kursy podstawowe i zaawansowane, 3,5 dniowe:`,
     individualCourse: 1600,
     group: 1200,
   };
 
   const taj = {
     name: 'Tajski Masaż Jivaka',
-    oneLesson: '1 godz. sesja masażu',
+    oneLesson: '1 godz. masażu',
     oneLessonPrice: 150,
     month: '2 sesje podstawowe miesięcznie',
     monthPrice: 550,
-    courseDuration: `Kursy podstawowe i zaawansowane ${3} dniowe:`,
+    courseDuration: `Kursy podstawowe i zaawansowane, ${3} dniowe:`,
     individualCourse: 1600,
     group: 1200,
   };
@@ -73,11 +73,11 @@ const Price = () => {
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
-                <p className="price">od {joga.individualCourse} zł</p>
+                <p className="price">{joga.individualCourse} zł</p>
               </li>
               <li>
                 <p className="name">W grupie do 5 osób</p>
-                <p className="price">od {joga.group} zł</p>
+                <p className="price">{joga.group} zł</p>
               </li>
             </ul>
             <NamePlusIkon name={taj.name} ikon={images.masazIkon} />
@@ -95,11 +95,11 @@ const Price = () => {
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
-                <p className="price">od {taj.individualCourse} zł</p>
+                <p className="price">{taj.individualCourse} zł</p>
               </li>
               <li>
                 <p className="name">W grupie do 5 osób</p>
-                <p className="price">od {taj.group} zł</p>
+                <p className="price">{taj.group} zł</p>
               </li>
             </ul>
             <NamePlusIkon name={tyb.name} ikon={images.relaksIkon} />
@@ -131,7 +131,7 @@ const Price = () => {
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
-                <p className="price">od {rel.individualCourse} zł</p>
+                <p className="price"> {rel.individualCourse} zł</p>
               </li>
               <li>
                 {/* <p className="name">W grupie do 5 osób</p>
