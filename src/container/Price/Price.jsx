@@ -9,38 +9,38 @@ const Price = () => {
   const joga = {
     name: 'Joga Qi Gong',
     oneLesson: '1 godz. konsultacji',
-    oneLessonPrice: 100,
-    courseDuration: '3,5',
-    individualCourse: 1500,
-    group: 1000,
+    oneLessonPrice: 150,
+    courseDuration: ` Kursy podstawowe i zaawansowane 3,5 dniowe:`,
+    individualCourse: 1600,
+    group: 1200,
   };
 
   const taj = {
     name: 'Tajski Masaż Jivaka',
-    oneLesson: '2 godz. sesja masażu',
-    oneLessonPrice: 250,
-    month: '2 sesje miesięcznie',
-    monthPrice: 450,
-    courseDuration: '3',
-    individualCourse: 1500,
-    group: 1000,
+    oneLesson: '1 godz. sesja masażu',
+    oneLessonPrice: 150,
+    month: '2 sesje podstawowe miesięcznie',
+    monthPrice: 550,
+    courseDuration: `Kursy podstawowe i zaawansowane ${3} dniowe:`,
+    individualCourse: 1600,
+    group: 1200,
   };
 
   const tyb = {
     name: 'Tybetańska Praktyka',
     oneLesson: '1 godz. konsultacji',
-    oneLessonPrice: 50,
-    courseDuration: '7',
-    individualCourse: 350,
-    group: 300,
+    oneLessonPrice: 100,
+    courseDuration: `Kurs podstawowy, ${5} godz.:`,
+    individualCourse: `od ${450}`,
+    group: 350,
   };
 
   const rel = {
     name: 'Relaksacja i Higiena',
     oneLesson: '1 godz. konsultacji',
     oneLessonPrice: 100,
-    courseDuration: '2',
-    individualCourse: 1500,
+    courseDuration: `Kurs podstawowy, ${2} dniowy:`,
+    individualCourse: 1600,
     group: 1000,
   };
 
@@ -53,7 +53,7 @@ const Price = () => {
           <img src={images.sesja} alt="sesj" />
           <img src={images.kursy} alt="kursy" />
           <div className="bon">
-            <p> Bony podarunkwe ważne przez 3 miesiące od daty zakupu. </p>
+            <p> Bony podarunkowe ważne przez 3 miesiące od daty zakupu. </p>
             <Link to="kontakt" className="btn header-btn">
               Zamów
             </Link>
@@ -69,9 +69,7 @@ const Price = () => {
                 <p className="price">{joga.oneLessonPrice} zł</p>
               </li>
               <li>
-                <p className="name">
-                  Kursy podstawowe i zaawansowane {joga.courseDuration} dniowe:
-                </p>
+                <p className="name">{joga.courseDuration}</p>
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
@@ -93,9 +91,7 @@ const Price = () => {
                 <p className="price">{taj.monthPrice} zł</p>
               </li>
               <li>
-                <p className="name">
-                  Kursy podstawowe i zaawansowane {taj.courseDuration} dniowe:
-                </p>
+                <p className="name">{taj.courseDuration}</p>
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
@@ -113,9 +109,7 @@ const Price = () => {
                 <p className="price">{tyb.oneLessonPrice} zł</p>
               </li>
               <li>
-                <p className="name">
-                  Kursy podstawowy {tyb.courseDuration} godz.:
-                </p>
+                <p className="name">{tyb.courseDuration}</p>
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
@@ -133,7 +127,7 @@ const Price = () => {
                 <p className="price">{rel.oneLessonPrice} zł</p>
               </li>
               <li>
-                <p className="name">Program {rel.courseDuration} dniowy:</p>
+                <p className="name">{rel.courseDuration}</p>
               </li>
               <li>
                 <p className="name">Indywidualnie</p>
@@ -146,8 +140,9 @@ const Price = () => {
             </ul>
           </div>
           <p className="p-text">
-            Pakiety, abonamenty miesięczne oraz stała współpraca, także z
-            organizacjami. <br />* Ceny aktualne do końca roku
+            Abonamenty miesięczne oraz stała współpraca, także z organizacjami.
+            <br />
+            Duże rabaty dla stałych klientów.
           </p>
           <Link to="kontakt" className="btn header-btn">
             Zamów
