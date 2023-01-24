@@ -1,0 +1,82 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
+
+.popup {
+  background-color: $color-light;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  border: 1px $color-main solid;
+  border-radius: $radius;
+  box-shadow: 0 6px 6px 0 rgba($color-dark, 0.3),
+    0 0px 50px 0 rgba($color-dark, 0.2);
+  padding: 20px;
+  text-align: center;
+
+  @include flex(column, center, space-between);
+
+  @include md {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .header-popup-wrap {
+    @include flex(row, center, center);
+
+    img {
+      width: 10%;
+      object-fit: cover;
+      margin: 0 20px;
+      margin: 0px 20px;
+    }
+
+    h2 {
+      font-family: $handwriting-font;
+      color: $color-main;
+      letter-spacing: 3px;
+      font-weight: $font-normal;
+      margin: 0px 20px;
+
+      @include md {
+        margin: 0px 0px;
+      }
+    }
+  }
+  .dates {
+    .one-cours {
+      @include flex(column, center, center);
+      border-bottom: 1px solid $color-dark;
+      padding: 10px;
+      .cours-name {
+        @include flex(row, center, center);
+        width: 100%;
+
+        img {
+          height: 55px;
+          width: auto;
+          margin-right: 15px;
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: 400;
+          font-family: $handwriting-font;
+          color: $color-main;
+          margin: 20px 0;
+          letter-spacing: 3px;
+
+          @include sm-max {
+            font-size: 18px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-popup {
+    margin-top: 2rem;
+  }
+}

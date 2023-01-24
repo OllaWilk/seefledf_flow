@@ -10,7 +10,7 @@ import {
   Opinions,
   Price,
 } from './container';
-import { Navbar } from './components';
+import { Navbar, PopUp } from './components';
 
 import './styles/global.scss';
 
@@ -20,6 +20,7 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Header />
+        <PopUp />
         <Offer />
         <Opinions />
         <Price />

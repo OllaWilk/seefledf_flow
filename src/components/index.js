@@ -6,4 +6,4 @@ export { default as SideBar } from './SideBar/SideBar';
 export { default as Headlines } from './Headlines/Headlines';
 export { default as ContactLabel } from './ContactLabel/ContactLabel';
 export { default as OfferCart } from './OfferCart/OfferCart';
-
+export { default as PopUp } from './PopUp/PopUp';

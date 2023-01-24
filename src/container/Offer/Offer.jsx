@@ -53,12 +53,7 @@ const Offer = () => {
           <br />
           <span>Najbliższe terminy:</span>
           <br />
-          <span>Kurs podstawowy 1 we Wrocławiu 16-17 lipca 2022.</span> <br />
-          <span>Kurs podstawowy 2 we Wrocławiu 17-18 września 2022.</span>
-          <br />
-          <span>Basic retreat w Kotlinie Kłodzkiej 1–4 września 2022..</span>
-          <br />
-          <span>Advanced retreat 2023.</span>
+          <span>Kurs podstawowy 1 w Gdańsku 01-02 kwietnia 2023.</span> <br />
         </p>
       ),
       img: images.joga,
@@ -76,34 +71,40 @@ const Offer = () => {
       ),
       content: (
         <p>
-          TAJSKI MASAŻ JIVAKA odpręża, przywraca równowagę oraz pozwala odnaleźć nowe
-          pokłady ENERGII do działania.
+          TAJSKI MASAŻ JIVAKA odpręża, przywraca równowagę oraz pozwala odnaleźć
+          nowe pokłady ENERGII do działania.
           <br />
           <br />
-          W niezwykły sposób łagodzi wszelkie przewlekłe bóle, usprawnia narządy ruchu,
-          rozluźnia mięśnie, uelastycznia stawy, łagodzi stany depresyjne. Wyraźnie pobudza
-          krążenie krwi i limfy spowalniając procesy starzenia. Otwiera meridiany, którymi płynie
-          życiowa ENERGIA, a więc pozytywnie wpływa na układ nerwowy, pokarmowy i
-          energetyczny. Przynosi wszechogarniający relaks oraz absolutne wyciszenie umysłu.
+          W niezwykły sposób łagodzi wszelkie przewlekłe bóle, usprawnia narządy
+          ruchu, rozluźnia mięśnie, uelastycznia stawy, łagodzi stany
+          depresyjne. Wyraźnie pobudza krążenie krwi i limfy spowalniając
+          procesy starzenia. Otwiera meridiany, którymi płynie życiowa ENERGIA,
+          a więc pozytywnie wpływa na układ nerwowy, pokarmowy i energetyczny.
+          Przynosi wszechogarniający relaks oraz absolutne wyciszenie umysłu.
           <br />
           <br />
           TAJSKI MASAŻ JIVAKA łączy elementy akupresury, hinduskiego masażu
-          ajurwedycznego, chińskiej metody tui na oraz japońskiego masażu shiatsu. Zawiera
-          techniki oddechowe i ćwiczenia rozciągające z hinduskiej jogi. W swojej pracy od lat
-          opieram się na podejściu bioenergetyki A. Lowena oraz elementach techniki TRE D.
-          Berceli‘ego.
+          ajurwedycznego, chińskiej metody tui na oraz japońskiego masażu
+          shiatsu. Zawiera techniki oddechowe i ćwiczenia rozciągające z
+          hinduskiej jogi. W swojej pracy od lat opieram się na podejściu
+          bioenergetyki A. Lowena oraz elementach techniki TRE D. Berceli‘ego.
           <br />
           <br />
-          TAJSKI MASAŻ JIVAKA poprawia kondycję fizyczną, psychiczną, emocjonalną i
-          intelektualną. <br />
+          TAJSKI MASAŻ JIVAKA poprawia kondycję fizyczną, psychiczną,
+          emocjonalną i intelektualną. <br />
           Długotrwałym efektem jest głęboki relaks, harmonia i odmłodzenie.
           <br />
           <br />
-          Masaż odbywa się bez użycia płynów czy olejów oraz w miękkim ubraniu typu dres i t-
-          shirt.
+          Masaż odbywa się bez użycia płynów czy olejów oraz w miękkim ubraniu
+          typu dres i t- shirt.
           <br />
           <br />
           Zapraszam serdecznie.
+          <br />
+          <br />
+          <span>Najbliższe terminy:</span>
+          <br />
+          <span>Kurs podstawowy 1 we Wrocławiu 11-12 luty 2023.</span>
         </p>
       ),
       img: images.jivaka,
@@ -141,6 +142,13 @@ const Offer = () => {
           <br />
           <br />
           Zapraszam serdecznie.
+          <br />
+          <br />
+          <span>Najbliższe terminy:</span>
+          <br />
+          <span>
+            Kurs podstawowy 1 we Wrocławiu 04 marca 2023, 04 czerwca 2023.
+          </span>
         </p>
       ),
       img: images.tybet,
@@ -189,6 +197,11 @@ const Offer = () => {
           genetyki, bioenergetyki i psychologii. Dla zainteresowanych
           pogłębieniem wiedzy i doświadczeń, kursy zaawansowane. <br />
           Zapraszam serdecznie.
+          <br />
+          <br />
+          <span>Najbliższe terminy:</span>
+          <br />
+          <span>Kurs Odnowa w Izerach 01-03 maja 2023.</span>
         </p>
       ),
       img: images.relaks,
@@ -202,8 +215,8 @@ const Offer = () => {
       <div className="section-spaceing ">
         <div className="app__offers-content">
           {/* {offers.map((offer, index) => (
-            <OfferCart 
-              title={offer.title} 
+            <OfferCart
+              title={offer.title}
               abstract={offer.abstract}
               content={offer.content}
               img={offer.img}
