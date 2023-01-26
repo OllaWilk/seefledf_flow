@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Headlines, OfferCart } from '../../components';
+import { Headlines, OfferCart, PopUp } from '../../components';
 
 import { images } from '../../constants';
 
 import './Offer.scss';
 
 const Offer = () => {
+  const [showPopUp, setShowPopUp] = useState(true);
+
+  const closePopup = () => {
+    setShowPopUp(!showPopUp);
+    console.log('klik');
+  };
+
   const offers = [
     {
       title: 'Joga Qi Gong',
@@ -104,7 +111,7 @@ const Offer = () => {
           <br />
           <span>Najbliższe terminy:</span>
           <br />
-          <span>Kurs podstawowy 1 we Wrocławiu 11-12 luty 2023.</span>
+          <span>Kurs podstawowy 1 we Wrocławiu 11-12 lutego 2023.</span>
         </p>
       ),
       img: images.jivaka,
@@ -147,7 +154,8 @@ const Offer = () => {
           <span>Najbliższe terminy:</span>
           <br />
           <span>
-            Kurs podstawowy 1 we Wrocławiu 04 marca 2023, 04 czerwca 2023.
+            Kurs podstawowy 1 we Wrocławiu 04 marca 2023 <br />
+            Kurs podstawowy 1 we Wrocławiu 04 czerwca 2023.
           </span>
         </p>
       ),
@@ -201,7 +209,9 @@ const Offer = () => {
           <br />
           <span>Najbliższe terminy:</span>
           <br />
-          <span>Kurs Odnowa w Izerach 01-03 maja 2023.</span>
+          <span>
+            Kurs Higiena i Relaksacja - Odnowa w Izerach 01-03 maja 2023.
+          </span>
         </p>
       ),
       img: images.relaks,
@@ -212,17 +222,8 @@ const Offer = () => {
   return (
     <section id="oferta">
       <Headlines props={'Oferta'} />
-      <div className="section-spaceing ">
+      <div className="section-spaceing offert-cursers-wrap">
         <div className="app__offers-content">
-          {/* {offers.map((offer, index) => (
-            <OfferCart
-              title={offer.title}
-              abstract={offer.abstract}
-              content={offer.content}
-              img={offer.img}
-              />
-          ))} */}
-
           <OfferCart
             title={offers[0].title}
             abstract={offers[0].abstract}
@@ -253,7 +254,11 @@ const Offer = () => {
             ikon={offers[3].ikon}
           />
         </div>
+        <div className="btn" onClick={closePopup}>
+          Zobacz terminy kursów
+        </div>
       </div>
+      {showPopUp && <PopUp />}
     </section>
   );
 };

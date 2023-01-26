@@ -20,7 +20,6 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Header />
-        <PopUp />
         <Offer />
         <Opinions />
         <Price />

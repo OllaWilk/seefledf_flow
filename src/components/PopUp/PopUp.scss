@@ -22,6 +22,10 @@
     width: 95%;
   }
 
+  @include sm-max {
+    top: 58%;
+  }
+
   .header-popup-wrap {
     @include flex(row, center, center);
 
@@ -79,4 +83,9 @@
   .btn-popup {
     margin-top: 2rem;
   }
+}
+
+.close-popup {
+  display: none;
+  background-color: red;
 }

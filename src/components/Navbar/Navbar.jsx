@@ -12,8 +12,7 @@ import './Navbar.scss';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
-  const toggleSidebar = (event) => {
-    event.preventDefault();
+  const toggleElement = () => {
     setToggle(!toggle);
   };
 
@@ -24,16 +23,18 @@ const Navbar = () => {
           <img src={images.logo} alt="logo" />
           <br />
           <div className="app__navbar-logo-text">
-            <p><span>JOGA & MASAŻ</span></p>
+            <p>
+              <span>JOGA & MASAŻ</span>
+            </p>
             <p>ciała i umysłu</p>
             <p>Anna Gidzińska</p>
           </div>
         </Link>
-        <div onClick={toggleSidebar}>
+        <div onClick={toggleElement}>
           {toggle ? <HiX /> : <AiOutlineMenu />}
         </div>
       </div>
-      <SideBar openSidebar={toggleSidebar} animate={toggle} />
+      <SideBar openSidebar={toggleElement} animate={toggle} />
     </nav>
   );
 };

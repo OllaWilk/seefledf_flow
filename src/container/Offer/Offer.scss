@@ -5,42 +5,50 @@ div > h2 {
   z-index: -10;
 }
 
-.app__offers-content {
-  width: 100%;
-  @include flex(row, flex-start, space-between);
-  flex-wrap: wrap;
+.offert-cursers-wrap {
+  @include flex(column, stretch, space-between);
 
-  .app_offer-item {
-    width: 48%;
-    @include flex(column, flex-start, center);
-    position: relative;
-    margin: 20px 0;
+  .btn {
+    margin-top: 2rem;
+  }
 
-    &:hover .abstract {
-      display: block;
-      z-index: 3;
-    }
+  .app__offers-content {
+    width: 100%;
+    @include flex(row, flex-start, space-between);
+    flex-wrap: wrap;
 
-    @include sm-max {
-      width: 100%;
-    }
+    .app_offer-item {
+      width: 48%;
+      @include flex(column, flex-start, center);
+      position: relative;
+      margin: 20px 0;
 
-    .app__img-wrap {
       &:hover .abstract {
-        opacity: 1;
+        display: block;
+        z-index: 3;
       }
 
-      .abstract {
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        background-color: $color-light;
-        opacity: 0;
-        height: 100%;
-        transition: 0.3s linear;
+      @include sm-max {
+        width: 100%;
+      }
 
-        @include sm-max {
-          display: none;
+      .app__img-wrap {
+        &:hover .abstract {
+          opacity: 1;
+        }
+
+        .abstract {
+          position: absolute;
+          bottom: 0%;
+          left: 0%;
+          background-color: $color-light;
+          opacity: 0;
+          height: 100%;
+          transition: 0.3s linear;
+
+          @include sm-max {
+            display: none;
+          }
         }
       }
     }
