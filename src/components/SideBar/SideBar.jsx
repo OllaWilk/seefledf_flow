@@ -8,6 +8,7 @@ const SideBar = ({ openSidebar, animate }) => {
   const links = [
     'home',
     'oferta',
+    'kursy',
     'opinie',
     'cennik',
     'o mnie',
@@ -25,7 +26,7 @@ const SideBar = ({ openSidebar, animate }) => {
       >
         {links.map((item) => (
           <li key={item}>
-            <Link to={item} spy={true} offset={-100} onClick={openSidebar}>
+            <Link to={item} spy={true} offset={-140} onClick={openSidebar}>
               {item}
             </Link>
           </li>

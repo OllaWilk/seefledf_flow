@@ -13,6 +13,7 @@ import oddech from '../assets/oddech.jpg';
 import bon from '../assets/bon.png';
 import kursy from '../assets/kursy.png';
 import sesja from '../assets/sesja.png';
+import jivakaNews from '../assets/JivakaNews.jpg';
 
 export default {
   joga,
@@ -30,4 +31,5 @@ export default {
   bon,
   kursy,
   sesja,
+  jivakaNews,
 };

@@ -4,6 +4,7 @@
 .app__news-wraper {
   @include flex(row-reverse, center, space-between);
   padding: 20px 0;
+  flex-wrap: wrap;
 
   @include sm-max {
     flex-direction: column;

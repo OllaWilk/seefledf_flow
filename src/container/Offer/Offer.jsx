@@ -11,7 +11,6 @@ const Offer = () => {
 
   const closePopup = () => {
     setShowPopUp(!showPopUp);
-    console.log('klik');
   };
 
   const offers = [
@@ -60,7 +59,12 @@ const Offer = () => {
           <br />
           <span>Najbliższe terminy:</span>
           <br />
-          <span>Kurs podstawowy 1 w Gdańsku 01-02 kwietnia 2023.</span> <br />
+          <span>
+            Kurs podstawowy 1 w Sulistrowicach 18-20 sierpnia 2023
+          </span>{' '}
+          <br />
+          <span>Kurs podstawowy 2 w Sulistrowicach 14-16 lipca 2023</span>{' '}
+          <br />
         </p>
       ),
       img: images.joga,
@@ -93,8 +97,8 @@ const Offer = () => {
           TAJSKI MASAŻ JIVAKA łączy elementy akupresury, hinduskiego masażu
           ajurwedycznego, chińskiej metody tui na oraz japońskiego masażu
           shiatsu. Zawiera techniki oddechowe i ćwiczenia rozciągające z
-          hinduskiej jogi. W swojej pracy od lat opieram się na podejściu
-          bioenergetyki A. Lowena oraz elementach techniki TRE D. Berceli‘ego.
+          hinduskiej jogi. W swojej pracy korzystam też częściowo z podejścia
+          bioenergetyki A. Lowena oraz elementów techniki TRE D. Berceli‘ego.
           <br />
           <br />
           TAJSKI MASAŻ JIVAKA poprawia kondycję fizyczną, psychiczną,
@@ -111,7 +115,12 @@ const Offer = () => {
           <br />
           <span>Najbliższe terminy:</span>
           <br />
-          <span>Kurs podstawowy 1 we Wrocławiu 11-12 lutego 2023.</span>
+          <span>
+            Kurs podstawowy 1 we Wrocławiu 12-13 sierpnia 2023, w Sulistrowicach
+            25-27 sierpnia 2023
+            <br />
+            Kurs podstawowy 2 we Wrocławiu 08-09 lipca 2023
+          </span>
         </p>
       ),
       img: images.jivaka,
@@ -153,23 +162,20 @@ const Offer = () => {
           <br />
           <span>Najbliższe terminy:</span>
           <br />
-          <span>
-            Kurs podstawowy 1 we Wrocławiu 04 marca 2023 <br />
-            Kurs podstawowy 1 we Wrocławiu 04 czerwca 2023.
-          </span>
+          <span>Termin spotkania ustalamy indywidualnie</span>
         </p>
       ),
       img: images.tybet,
       ikon: images.relaksIkon,
     },
     {
-      title: 'Relaksacja i Higiena',
+      title: 'PO - WOLNOŚĆ Program Odnowy',
       abstract: (
         <p>
           Kompleksowa regeneracja na poziomie fizycznym, mentalnym i
-          energetycznym za pomocą '5' żywiołów, '6' zmysłów oraz '7' nawyków.
-          Gotowy program odnowy biologicznej i duchowej, dobrany specjalnie dla
-          Ciebie i do zastosowania każdego dnia.
+          energetycznym za pomocą 5 żywiołów, 6 zmysłów oraz 7 nawyków. <br />
+          Gotowy Program Odnowy biologicznej i duchowej ..... dobrany specjalnie
+          dla Ciebie i do zastosowania każdego dnia.
         </p>
       ),
       content: (
@@ -196,21 +202,24 @@ const Offer = () => {
           ✓ prawidłowo korzystać z zasobów tej planety,
           <br />
           <br />
-          ✓ ciało będzie sprawniejsze, <br />
+          ✓ Twoje ciało będzie zdrowsze i sprawniejsze, <br />
           <br />
-          ✓ z lekkością i spokojem podejdziesz do życiowych wyzwań,
+          ✓ z lekkością i spokojem podejdziesz do życiowych wyzwań.
           <br />
           <br />
           Metody pracy oparte są o osiągnięcia z dziedziny biologii, neurologii,
-          genetyki, bioenergetyki i psychologii. Dla zainteresowanych
-          pogłębieniem wiedzy i doświadczeń, kursy zaawansowane. <br />
+          genetyki, bioenergetyki i psychologii. Pełny Program Odnowy zawiera
+          także dobrane do potrzeb elementy Jogi Qi Gong oraz Tybetańskiej
+          Praktyki. Dla zainteresowanych pogłębieniem wiedzy i doświadczeń,
+          kursy zaawansowane wraz z m.in. Tajskim Masażem Jivaka . <br />
           Zapraszam serdecznie.
           <br />
           <br />
           <span>Najbliższe terminy:</span>
           <br />
           <span>
-            Kurs Higiena i Relaksacja - Odnowa w Izerach 01-03 maja 2023.
+            Kurs PO - WOLNOŚĆ Program Odnowy, termin spotkania ustalamy
+            indywidualnie
           </span>
         </p>
       ),
@@ -220,10 +229,10 @@ const Offer = () => {
   ];
 
   return (
-    <section id="oferta">
+    <section id='oferta'>
       <Headlines props={'Oferta'} />
-      <div className="section-spaceing offert-cursers-wrap">
-        <div className="app__offers-content">
+      <div className='section-spaceing offert-cursers-wrap'>
+        <div className='app__offers-content'>
           <OfferCart
             title={offers[0].title}
             abstract={offers[0].abstract}
@@ -254,11 +263,11 @@ const Offer = () => {
             ikon={offers[3].ikon}
           />
         </div>
-        <div className="btn" onClick={closePopup}>
-          Zobacz terminy kursów
+        <div id='kursy' className='btn-purple' onClick={closePopup}>
+          <span>Zobacz terminy kursów</span>
         </div>
+        {!showPopUp && <PopUp />}
       </div>
-      {showPopUp && <PopUp />}
     </section>
   );
 };

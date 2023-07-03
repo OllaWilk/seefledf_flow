@@ -10,7 +10,7 @@ import {
   Opinions,
   Price,
 } from './container';
-import { Navbar, PopUp } from './components';
+import { Navbar } from './components';
 
 import './styles/global.scss';
 

@@ -9,16 +9,16 @@ const ContactLabel = ({ title, ikon, text, zipCode, name }) => {
     } else if (title === 'Napisz:') {
       return 'mailto:namshejeshe@gmail.com';
     } else if (title === 'Przyjedź:') {
-      return 'https://goo.gl/maps/tkstE84Qf1rE4j7p7';
+      return 'https://goo.gl/maps/rQeTTNTQjRwf7nJM9';
     } else {
-      return 'https://g.page/domjesionow?share';
+      return 'https://goo.gl/maps/zE5WcVXD5bTCPPBD6';
     }
   };
 
   return (
-    <a className="contact-wrapper" href={chooseHref()}>
+    <a className='contact-wrapper' href={chooseHref()}>
       <p>{title}</p>
-      <div className="wrapper-icon">
+      <div className='wrapper-icon'>
         {ikon}
         <h3>
           {text}

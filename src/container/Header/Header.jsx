@@ -5,8 +5,8 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <header id="home" className="app__header">
-      <div className="app__header-spaceing">
+    <header id='home' className='app__header'>
+      <div className='app__header-spaceing'>
         {/* <h1>
           <span> joga & masaż </span> <br />
           ciała i umysłu
@@ -16,7 +16,7 @@ const Header = () => {
           naturalnie i holistycznie, <br />
           tradycyjnie i na miarę naszych czasów.
         </h2>
-        <Link to="kontakt" className="btn header-btn">
+        <Link to='kontakt' spy={true} offset={-140} className='btn header-btn'>
           Zamów
         </Link>
       </div>

@@ -8,7 +8,7 @@ import './Opinions.scss';
 const Opinions = () => {
   const testimonialsArr = [
     {
-      name: 'Radek & Karolina, menadżerowie, Polska',
+      name: 'Radek & Karolina, menadżerowie, Wrocław',
       feedback: (
         <p>
           Całe doświadczenie z{' '}
@@ -27,7 +27,20 @@ const Opinions = () => {
       ),
     },
     {
-      name: 'Agnieszka, grafik, Polska',
+      name: 'Anna, dietetyk, Poznań',
+      feedback: (
+        <p>
+          Wszystkim, którzy chcą poczuć więcej energii, wzmocnić zmęczone ciało
+          i jednocześnie odczuć głębokie rozluźnienie po ciągłym tkwieniu w
+          stresie, polecam bez najmniejszej wątpliwości terapie i masaż pani
+          Ani. Wreszcie znalazłam metodę, która bez bólu przywraca mojemu ciału
+          energię.
+          <br />
+        </p>
+      ),
+    },
+    {
+      name: 'Agnieszka, grafik, Sobótka',
       feedback: (
         <p>
           Dzięki praktyce z{' '}
@@ -50,7 +63,7 @@ const Opinions = () => {
       ),
     },
     {
-      name: 'Jula, piosenkarka, Polska',
+      name: 'Jula, piosenkarka, Wrocław',
       feedback: (
         <p>
           Na kursie z <span style={{ fontWeight: 'bold' }}>JOGA & MASAŻ </span>{' '}
@@ -66,7 +79,7 @@ const Opinions = () => {
       ),
     },
     {
-      name: 'René, menadżer, Szwajcaria',
+      name: 'René, menadżer, Amden',
       feedback: (
         <p>
           Sesja masażu u Ani to prawdziwe przeżycie – podróż w głąb swojego
@@ -77,7 +90,7 @@ const Opinions = () => {
       ),
     },
     {
-      name: 'Gloria, stomatolog, Szwajcaria.',
+      name: 'Gloria, stomatolog, Zurych',
       feedback: (
         <p>
           Dziękuję Ani za wyjątkowe 3 dni, wprowadzenie i przewodnictwo w{' '}
@@ -111,6 +124,17 @@ const Opinions = () => {
         </p>
       ),
     },
+    {
+      name: 'Aldona, psychoterapeutka, Kraków',
+      feedback: (
+        <p>
+          Polecam każdemu piękne doświadczenie, jakim jest praca z Panią Anną. W
+          jej troskliwych rękach można poczuć się rozluźnioną, zrelaksowaną i
+          móc przypomnieć sobie, jak to jest, kiedy w naszym ciele rozpuszczają
+          się napięcia, przeszkody i blokady i po prostu odpocząć.
+        </p>
+      ),
+    },
   ];
 
   const handleClick = (index) => {
@@ -123,14 +147,14 @@ const Opinions = () => {
   const test = testimonialsArr[currentIndex];
 
   return (
-    <section id="opinie">
+    <section id='opinie'>
       <Headlines props={'Opinie'} />
-      <div className="section-spaceing">
-        <div className="app__opinions-content">
+      <div className='section-spaceing'>
+        <div className='app__opinions-content'>
           {testimonialsArr.length && (
-            <div className="app__testimonial-item ">
+            <div className='app__testimonial-item '>
               <div
-                className="app__next"
+                className='app__next'
                 onClick={() =>
                   handleClick(
                     currentIndex === 0
@@ -141,16 +165,16 @@ const Opinions = () => {
               >
                 <HiChevronLeft />
               </div>
-              <div className="app__testimonial-content">
-                <div className="app__testimonial-quote">
+              <div className='app__testimonial-content'>
+                <div className='app__testimonial-quote'>
                   {/* <img src={images.quote} alt="quote" /> */}
                   <p>{test.feedback}</p>
                   {/* <img src={images.quote} alt="quote" /> */}
                 </div>
-                <p className="app__name">{test.name}</p>
+                <p className='app__name'>{test.name}</p>
               </div>
               <div
-                className="app__next"
+                className='app__next'
                 onClick={() =>
                   handleClick(
                     currentIndex === testimonialsArr.length - 1

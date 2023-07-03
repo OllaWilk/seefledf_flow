@@ -2,19 +2,11 @@
 @import '../../styles/settings.scss';
 
 .popup {
-  background-color: $color-light;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 999;
-  transform: translate(-50%, -50%);
-  border: 1px $color-main solid;
+  border-top: none;
   border-radius: $radius;
-  box-shadow: 0 6px 6px 0 rgba($color-dark, 0.3),
-    0 0px 50px 0 rgba($color-dark, 0.2);
+
   padding: 20px;
   text-align: center;
-
   @include flex(column, center, space-between);
 
   @include md {
@@ -30,7 +22,7 @@
     @include flex(row, center, center);
 
     img {
-      width: 10%;
+      width: 8%;
       object-fit: cover;
       margin: 0 20px;
       margin: 0px 20px;
@@ -53,6 +45,8 @@
       @include flex(column, center, center);
       border-bottom: 1px solid $color-dark;
       padding: 10px;
+      width: 100%;
+
       .cours-name {
         @include flex(row, center, center);
         width: 100%;
@@ -88,4 +82,8 @@
 .close-popup {
   display: none;
   background-color: red;
+}
+
+.info-kursy {
+  margin-top: 32px;
 }

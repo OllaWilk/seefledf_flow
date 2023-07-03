@@ -385,13 +385,61 @@ const News = () => {
       img: images.woda,
       ikon: images.logo,
     },
+    {
+      title: 'Jivaka',
+      content: (
+        <p>
+          Urodził się we współczesnym Rajgir, w starożytnej stolicy Magadha, w
+          czasach króla Bimbisary około r. 540 p.n.e. Indyjski lekarz z
+          północnych Indii, znany jako Jivaka Kumar Bhaccha (lub Jivaka
+          Komarabhacca lub dr Shivago), był uczniem Buddy oraz jego osobistym
+          lekarzem. .<br />
+          <br />
+          Nosił przydomek ‘króla medycyny’. Uważany jest za założyciela systemu
+          Tradycyjnej Medycyny Tajskiej, „ojca doktora”, założyciela (wynalazcę)
+          Masażu Tajskiego, a także ziołolecznictwa, a nawet akupunktury. Jivaka
+          oznacza ‘stan prawdziwej żywotności’.
+          <br />
+          <br />
+          Wyszkolony w medycynie ayurwedyjskiej, dr Jivaka był również dobrze
+          zorientowany w praktyce asan i medytacji. Zainspirowany naukami Buddy,
+          jako jego przyjaciel, uczył mnichów o uważności i mocy uważności w
+          uzdrawianiu. Stworzył praktykę, którą dziś nazywamy Masażem Tajskim.
+          <br />
+          <br />
+          Nauki Jivaki dotarły do Tajlandii około III lub II wieku pne w wyniku
+          rozprzestrzeniania się buddyzmu.
+          <br />
+          <br />
+          Opowieści o życiu Jivaki można znaleźć we wczesnych tekstach
+          buddyjskich. Niemniej jednak najwcześniejsza informacja pisana pojawia
+          się setki lat po życiu Buddy, około I wieku pne.
+          <br />
+          <br />
+          Dr Jivaka jest czczony przez Hindusów, Tajów i Chińczyków jako ważny
+          patron tradycyjnej medycyny. Tradycyjny Masaż Tajski jest „medycyną
+          buddyjską”. Ściśle określona etyka i intencje wśród praktykujących i
+          nauczycieli Tajskiego Masażu Jivaka są świadectwem szacunku i
+          wdzięczności dla dr Jivaki Komarabhacca oraz zgodnie ze wskazaniami
+          Buddy, promują harmonię, współczucie i pokój wśród ludzkości.
+          <br />
+          <br />
+          <br />
+          Źródła historyczne.
+          <br />
+          Pełna lista dostępna na naszych kursach.
+        </p>
+      ),
+      img: images.jivakaNews,
+      ikon: images.logo,
+    },
   ];
 
   return (
-    <section id="news">
+    <section id='news'>
       <Headlines props={'News'} />
-      <div className="section-spaceing ">
-        <div className="app__news-wraper">
+      <div className='section-spaceing '>
+        <div className='app__news-wraper'>
           <OfferCart
             title={news[1].title}
             content={news[1].content}
@@ -403,6 +451,12 @@ const News = () => {
             content={news[0].content}
             img={news[0].img}
             ikon={news[0].ikon}
+          />
+          <OfferCart
+            title={news[2].title}
+            content={news[2].content}
+            img={news[2].img}
+            ikon={news[2].ikon}
           />
         </div>
       </div>

@@ -103,3 +103,11 @@
     }
   }
 }
+
+.reserwation-wrap {
+  @include flex(row, center, center);
+}
+.reserwation {
+  width: 66%;
+  margin: 2rem 0;
+}

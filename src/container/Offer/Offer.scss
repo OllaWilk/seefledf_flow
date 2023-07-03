@@ -5,6 +5,15 @@ div > h2 {
   z-index: -10;
 }
 
+#kursy {
+  padding: 20px;
+
+  span {
+    // font-weight: bold;
+    font-size: 22px;
+  }
+}
+
 .offert-cursers-wrap {
   @include flex(column, stretch, space-between);
 
