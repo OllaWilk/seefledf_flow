@@ -1,74 +1,25 @@
-[https://yoga-massage-anna-gidzinska-website.vercel.app
-](https://yoga-massage-anna-gidzinska-website.vercel.app)
 
+# 🌿 "yoga-massage-anna-gidzinska-website": My first commercial business one-page website in React"
+The "yoga-massage-anna-gidzinska-website" is a serene and minimalistic one-page web application designed to showcase the professional services of Anna Gidzińska, a dedicated yoga instructor and massage therapist. Built with React, this website emphasizes simplicity, ease of navigation, and a harmonious user experience, reflecting the core values of yoga and massage therapy.
 
-# Getting Started with Create React App
+[Click here to go live](https://yoga-massage-anna-gidzinska-website.vercel.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot](src/assets/jogaimasazview.png)
 
-## Available Scripts
+## 🚀 Technologies
+![REACT](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white&color=555)
+![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-In the project directory, you can run:
+## ⭐ Key Features:
 
-### `npm start`
+1. Home: A header that welcomes users into a calm and inviting atmosphere of the site, emphasizing Anna's holistic approach to health and well-being.
+2. Offer: A section that thoroughly describes the available services, such as Qi Gong Yoga and Jivaka Thai Massage. Each service is detailed, allowing visitors to gain a deeper understanding of the techniques offered and their benefits.
+3. Courses: Information on the dates and types of available courses, including basic and advanced courses.
+4. Reviews: Reviews and testimonials from clients who have utilized Anna's services. Presented in a carousel format.
+5. Pricing: A clear presentation of the costs for individual services and courses.
+6. About Me: A personal section where Anna shares her experience, life and professional philosophy, as well as information about her education and qualifications.
+7. News: Updates and articles.
+8. Contact: A contact form and all necessary contact details. Here, I utilized the emailjs package.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤓 Summary 
+This project taught me valuable lessons about working with clients, handling time pressure, and adapting to changes dynamically introduced by the client.
