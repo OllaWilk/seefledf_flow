@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Headlines, OfferCart, PopUp } from '../../components';
+import { Headlines, OfferCart } from '../../components';
 
 import { images } from '../../constants';
 
@@ -263,10 +263,6 @@ const Offer = () => {
             ikon={offers[3].ikon}
           />
         </div>
-        <div id='kursy' className='btn-purple' onClick={closePopup}>
-          <span>Zobacz terminy kursów</span>
-        </div>
-        {!showPopUp && <PopUp />}
       </div>
     </section>
   );
